@@ -132,16 +132,43 @@ function hienThiProducts(thuonghieuchon_arr = [] , giaban_arr = []) {
                         <span class="product-item__price--old">${formatCurrency(giaCu)}</span>
                         <span class="product-item__price--new">${formatCurrency(giaMoi)}</span>
                     </div>   
-                    <div class="product-item-active">
-                        <!-- <div class="product-item-active__like"><i class="fa-regular fa-heart"></i></div> -->
-                        <div class="product-item-active__start"><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i></div>
-                        <div class="product-item-active__info">${sold} was sold</div>
-                    </div>             
+            
                 </a>
+                <div class="product-item-active">
+                <!-- <div class="product-item-active__like"><i class="fa-regular fa-heart"></i></div> -->
+                <div class="product-item-active__start">
+                <i class="fa fa-star check " onclick="toggleStar(this)"></i>
+                <i class="fa fa-star check " onclick="toggleStar(this)"></i>
+                <i class="fa-sharp fa-regular fa-star" onclick="toggleStar(this)"></i>
+                <i class="fa-sharp fa-regular fa-star" onclick="toggleStar(this)"></i>
+                <i class="fa-sharp fa-regular fa-star" onclick="toggleStar(this)"></i>
+            </div>
+                <div class="product-item-active__info">${sold} was sold</div>
+            </div> 
             </div>`;
     }
 }
 
+function toggleStar(star) {
+  
+    if (star.classList.contains('fa-sharp')) {
+        // Loại bỏ class 'fa-sharp' và thêm class 'fa'
+        star.classList.remove('fa-sharp');
+        star.classList.remove('fa-regular');
+        star.classList.remove('fa-star');
+        star.classList.add('fa');
+        star.classList.add('fa-star');
+        star.classList.add('check');
+    } else {
+        // Nếu không có class 'fa-sharp', thì thêm class 'fa-sharp' và loại bỏ class 'fa'
+        star.classList.remove('fa');
+        star.classList.remove('fa-star');
+        star.classList.remove('check');
+        star.classList.add('fa-sharp');
+        star.classList.add('fa-regular');
+        star.classList.add('fa-star');
+    }
+}
 
 function choosePorduct() {
     var arr1 = document.getElementsByClassName("ThuongHieu");
