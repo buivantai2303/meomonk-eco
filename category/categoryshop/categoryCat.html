@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/stylesheet/reset.css">
+    <link rel="stylesheet" href="assets/stylesheet/category-basic.css">
+    <link rel="stylesheet" href="assets/stylesheet/category-main.css">
+    <link rel="stylesheet" href="assets/js/catygory.js">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.4.0-web/css/all.css">
+
+</head>
+<body>
+    <div class="main-content">
+        <div class="grid">
+            
+            <div class="grid_row">
+            <div class="grid__column_3">
+                <h3 class="category__heading">Danh Mục Sản Phẩm</h3>
+                <nav class="category">
+                    <ul class="category-list">
+                        <li class="category-item">
+                            <a href="#" class="category-item_link">Home </a>
+                        </li>
+                        <li class="expandable category-item">
+                            <a href="#" class="category-item_link">Product</a>
+                            <ul>
+                              <li><a href="#" class="category-item_link">Food for Dog</a></li>
+                              <li><a href="#" class="category-item_link">Food for Cat</a></li>
+                              <li><a href="#" class="category-item_link">Food for Hamsters</a></li>
+                              <li><a href="#" class="category-item_link">Food for Bird</a></li>
+                              <li><a href="#" class="category-item_link">Food for Fish</a></li>
+                              
+                            </ul>
+                          </li> 
+                        <li class="category-item">
+                            <a href="#" class="category-item_link">Price list </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item_link">Book service </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item_link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h3 class="brand__heading">Thương Hiệu</h3>
+                <div class="brand">
+                    <ul class="brand-list">
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="Zenith"> Zenith
+                            </label>
+                        </li>
+                    
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="Smartheart"> Smartheart
+                            </label>
+                        </li>
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Royal Canin"> Royal Canin
+                            </label>
+                        </li>
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Doca"> Doca
+                            </label>
+                        </li>
+
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="FIBs"> FIBs
+                            </label>
+                        </li>
+
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Nutrience"> Nutrience
+                            </label>
+                        </li>
+
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Pedigree"> Pedigree
+                            </label>
+                        </li>
+
+
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Whiskat"> Whiskat
+                            </label>
+                        </li>
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Tropiclean"> Tropiclean
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                
+        </div>
+        <div class="grid__column_9">
+            <div class="product-header">
+                <a href="#" class="button-like-link button-status active" id="lienQuanBtn">Popular</a>
+                <a href="#" class="button-like-link" id="moiNhatBtn">Newest</a>
+                <a href="#" class="button-like-link" id="banChayBtn">Best seller</a>
+                <a href="#" class="button-like-link" id="giaBtn">Price</a>
+            </div>
+
+            <div class="product">
+                <div class="grid_row" id="product">
+
+          
+             </div>
+        </div>
+
+        <!-- Phân trang -->
+        <nav>
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                
+                <li><a href="#">Trang tiếp</a></li>
+            </ul>
+        </nav>
+
+</div>  
+</div>
+                    </div>
+                    <script src="assets/js/catygory.js"></script>
+</body>
+</html>

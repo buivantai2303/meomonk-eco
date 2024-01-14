@@ -1,0 +1,105 @@
+:root{
+    --white--color: #fff;
+    --black--color: #000;
+    --text--color:#333;
+    --color--primakey: rgb(246, 68, 46);
+    --color--btn: rgba(0, 0, 0, 0.2);
+    --color--border: rgb(209, 197, 197);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6 rem;
+    font-family: "Poppins", sans-serif;
+    line-height: normal;
+    background: #fffcf4;
+}
+
+/* Common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.grid{
+    width: 1200px;
+    max-width:100% ;
+   
+    
+}
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.grid__column_3{
+    /* width:16.6667%; */
+    width: 22%;
+    
+    padding: 0 10px 0 10px;
+   
+}
+.grid__column_9{
+    width: 78%;
+    /* width:83.31%; */
+    padding:0px 5px 0 5px;
+    
+}
+
+.grid__column_2-4{
+    padding: 0 5px 8px 5px;
+    width:25%;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.navbar-icon-link{
+    color: white;
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+/* an left menu */
+@media screen and (max-width: 700px) {
+    .grid__column_3 {
+        display: none;
+    }
+    .grid__column_9 {
+        width: 100%; /* Thiết lập chiều rộng là 50% khi màn hình nhỏ hơn hoặc bằng 600px */
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    .grid__column_2-4 {
+        width: 50%; /* Thiết lập chiều rộng là 50% khi màn hình nhỏ hơn hoặc bằng 600px */
+    }
+    .grid__column_9 {
+        width: 100%; /* Thiết lập chiều rộng là 50% khi màn hình nhỏ hơn hoặc bằng 600px */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .product-link{
+        display: none;
+    }
+
+}
