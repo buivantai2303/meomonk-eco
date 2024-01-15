@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,6 +45,19 @@ table {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .desc{
     display: -webkit-box;
      -webkit-line-clamp:3 ;
@@ -82,6 +92,10 @@ body{
     background: #fffcf4;
     font-size: 1.6 rem;
     font-family: "Poppins", sans-serif;
+
+}
+body label{
+    text-align: center;
 }
 /* ----------------------Logo---------------------------------------- */
 .logo{
@@ -113,10 +127,6 @@ body{
   font-size: 1rem;
 }
 
-.breadcrumnav li::after{
-   
-  }
-
 .breadcrumnav li:last-child::after{
     content: "";
     
@@ -131,7 +141,7 @@ body{
 }
 
 .breadcrumnav a::after{
-    content: url('images/next.png');
+    content:url('../images/next.png');
     vertical-align: middle;
 }
 
@@ -173,7 +183,7 @@ body{
 
 
 
-.container{
+.containermaincontent{
     display: flex;
     flex: 1;
     width: 1170px;
@@ -182,7 +192,7 @@ body{
     margin-right: auto;
     
 }
-.container .content {
+.containermaincontent .content {
     margin-left: 30px;
 }
 .fater-viewproduct img{
@@ -196,7 +206,7 @@ body{
     margin-right: 30px;
     
 }
-.content{
+.contentmain{
     width: 700px;
     height: 500px;
     margin: 50px auto;
@@ -397,6 +407,7 @@ img{
 .product-types {
     margin-top: 20px;
     margin-left:40px;
+    display: flex;
 }
 
 .product-type-btn {
@@ -417,8 +428,14 @@ img{
     margin-top: 20px;
     display: flex;
     align-items: center;
+    
 }
-
+#quantity{
+    width: 10%;
+    vertical-align:middle;
+    padding-left: 5px;
+    text-align: center;
+}
 
 input[type="number"] {
     margin: 0 5px; /* Khoảng cách giữa input và nút */
@@ -479,7 +496,7 @@ label[for="quantity"] {
 
 
 /* ------------------Title of product---------- */
-.nameprduct h1,h2,h3{
+.nameprduct h1,h2{
     margin-top: 30px;
 
 }
@@ -497,7 +514,9 @@ label[for="quantity"] {
     display: flex;
     align-items: center;
 }
-
+.sharetxt{
+    margin-right: 10px;
+}
 .iconsocial{
     display: flex;
 }
@@ -586,10 +605,20 @@ label[for="quantity"] {
     margin-bottom:50px;
     background-color: #fff;
 }
+.logoshop img{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+    margin: 30px;
+
+}
 .brand div{
     flex-direction: column;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+.productid{
+    margin-top: 20px;
 }
 .descshop{
     display: flex;
@@ -630,16 +659,32 @@ label[for="quantity"] {
     margin-bottom:50px;
  
 }
-
+.product-rating_list h2{
+    margin-left: 20px;
+}
 .comment_details{
     display: flex;
+    position: relative;
 }
 .avt{
     margin-right: 20px;
     margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover; 
+}
+
+.avt img{
+    border-radius:50%;
+    align-items: center;
 }
 .product-rating h2{
     font-size: 20px;
+    font-weight: bolder;
+}
+.product-rating a{
+    font-size: 15px;
+    text-decoration: none;
     font-weight: bolder;
 }
 .comment_content{
@@ -661,13 +706,11 @@ label[for="quantity"] {
     border-radius:5px;
     /* border: 1px solid black; */
 }
-.avt img{
-    border-radius:50%;
-    align-items: center;
-}
 .image_rating_zoom_detail img{
+    display: block;
     border-radius:5px;
-    margin-top: 30px;
+
+    
     
     
 }
@@ -685,16 +728,6 @@ label[for="quantity"] {
 .image_rating{
     margin-top: 50px;
 }
-.product-rating_overview{
-   
-}
-
-
-.avt{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
 
 
 .image_rating_list_container{
@@ -709,7 +742,7 @@ label[for="quantity"] {
 
 .image_rating_zoom{
     width: 300px;
-    height: 380px;
+    height:auto;
     display: none;
     margin:10px 20px 50px auto;
     
@@ -731,9 +764,12 @@ label[for="quantity"] {
     margin-top:20px;
 }
 .list-productRelated h2{
-    font-size:20px;
-    
+    font-size:20px; 
     font-weight:bolder;
+    padding-top: 30px;
+}
+.header-title h2{
+    margin-left: 20px;
 }
 .product-content{
     display: flex;
@@ -742,8 +778,8 @@ label[for="quantity"] {
 .product-related{
     flex: 0 0 auto; /* Ngăn các thẻ con co lại để giữ kích thước ban đầu */
     margin-right: 20px;
+    margin-left: 20px;
     width: 150px;
-    /* height: 200px; */
     align-items: center; 
     text-align: center; 
     margin-bottom: 50px;

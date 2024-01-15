@@ -5,47 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .label-span {
-            display: block;
-            margin-bottom: 10px;
-
+        .list-productRelated{
+            background-color:deepskyblue;
+            width: 1170px;
+            max-width: calc(100% - 48px);
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
         }
-        .shop{
-            margin:auto 30px ;
+        .header-title{
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+        .product-content{
+            margin-top:20px;
+        }
+        .list-productRelated h2{
+            font-size:20px; 
+            font-weight:bolder;
+            margin: 30px 0px 0px 20px;
+        }
+      
+        .product-content{
             display: flex;
-            align-items: center;
-            font-size: 1rem;
+            overflow-x: auto;
         }
-       
-        .descshop{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .descshop .label-span {
-            flex: 1 0 25%; /* Chia mỗi hàng thành 4 cột */
-        }
-        .logo,.brand,.descshop{
+        .product-related{
+            flex: 0 0 auto; /* Ngăn các thẻ con co lại để giữ kích thước ban đầu */
             margin-right: 20px;
+            margin-left: 20px;
+            width: 150px;
+            align-items: center; 
+            text-align: center; 
+            margin-bottom: 50px;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            border-radius:5px;
         }
-        .descshop span{
-                color:#de0000;
+        .product-related:hover {
+            transform: scale(1.1); /* Phóng to khi hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng về phía sau */
         }
-        .chatandview span {
-            padding: 5px 10px;
-            background-color:#e9c5c5;
-            border: 1px solid #de0000;
-            margin-right: 10px;
-            cursor: pointer;
-            border-radius:3px;
+        .image-product img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
         }
-    
-        .chatandview span:hover {
-            background-color:white;
+        
+        .image-product .image2 {
+            display: none;
+        }
+        .product-related:hover .image-product .image1 {
+            display: none;
+        }
+        
+        .product-related:hover .image-product .image2 {
+            display: block;
+            
+        }
+        
+        
+        .product-related img{
+            border-radius: 5px;
+        }
+        .image-product{
+            width: 150px;
+            height: 200px;
+            object-fit: contain;
+        
+        }
+        .product-relatedDetails{
+            width: 150px;
+            margin-top: 10px;
+        }
+        .priceproduct-relatedDetails{
+            color:#de0000;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="shop">
+    <!-- <div class="shop">
         <div class="logoshop">
             <img src="images/logo.png" alt="">
         </div>
@@ -81,6 +123,129 @@
             </div>
            
         </div>
+    </div> -->
+
+
+    <div class="list-productRelated">
+        <div class="header-title">
+            <h2>Sản phẩm tương tự</h2>
+        </div>
+        <div class="product-content">
+            <div class="product-related">
+                <div class="image-product">
+                    <img class="image1" src="images/img1.jpg" alt="">
+                    <img class="image2" src="images/img5.jpg" alt="">
+                </div>
+                <div class="product-relatedDetails">
+                    <div class="nameproduct-relatedDetails">
+                        <p>Chúc chích</p>
+                    </div>
+                    <div class="priceproduct-relatedDetails">
+                        <span>250,000₫</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-related">
+                <div class="image-product">
+                    <img class="image1" src="images/img1.jpg" alt="">
+                    <img class="image2" src="images/img5.jpg" alt="">
+                </div>
+                <div class="product-relatedDetails">
+                    <div class="nameproduct-relatedDetails">
+                        <p>Cát cho mèo </p>
+                    </div>
+                    <div class="priceproduct-relatedDetails">
+                        <span>250,000₫</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-related">
+                <div class="image-product">
+                    <img class="image1" src="images/image8.jpg" alt="">
+                    <img class="image2" src="images/image7.jpg" alt="">
+                </div>
+                <div class="product-relatedDetails">
+                    <div class="nameproduct-relatedDetails">
+                        <p>Đồ chơi bạo hành động vật</p>
+                    </div>
+                    <div class="priceproduct-relatedDetails">
+                        <span>250,000₫</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-related">
+                <div class="image-product">
+                    <img class="image1" src="images/img1.jpg" alt="">
+                    <img class="image2" src="images/img5.jpg" alt="">
+                </div>
+                <div class="product-relatedDetails">
+                    <div class="nameproduct-relatedDetails">
+                        <p>Pate</p>
+                    </div>
+                    <div class="priceproduct-relatedDetails">
+                        <span>250,000₫</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-related">
+                <div class="image-product">
+                    <img class="image1" src="images/img1.jpg" alt="">
+                    <img class="image2" src="images/img5.jpg" alt="">
+                </div>
+                <div class="product-relatedDetails">
+                    <div class="nameproduct-relatedDetails">
+                        <p>Pate</p>
+                    </div>
+                    <div class="priceproduct-relatedDetails">
+                        <span>250,000₫</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-related">
+                <div class="image-product">
+                    <img class="image1" src="images/img1.jpg" alt="">
+                    <img class="image2" src="images/img5.jpg" alt="">
+                </div>
+                <div class="product-relatedDetails">
+                    <div class="nameproduct-relatedDetails">
+                        <p>Pate</p>
+                    </div>
+                    <div class="priceproduct-relatedDetails">
+                        <span>250,000₫</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-related">
+                <div class="image-product">
+                    <img class="image1" src="images/img1.jpg" alt="">
+                    <img class="image2" src="images/img5.jpg" alt="">
+                </div>
+                <div class="product-relatedDetails">
+                    <div class="nameproduct-relatedDetails">
+                        <p>Pate</p>
+                    </div>
+                    <div class="priceproduct-relatedDetails">
+                        <span>250,000₫</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-related">
+                <div class="image-product">
+                    <img class="image1" src="images/img1.jpg" alt="">
+                    <img class="image2" src="images/img5.jpg" alt="">
+                </div>
+                <div class="product-relatedDetails">
+                    <div class="nameproduct-relatedDetails">
+                        <p>Pate</p>
+                    </div>
+                    <div class="priceproduct-relatedDetails">
+                        <span>250,000₫</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </body>
 </html>
