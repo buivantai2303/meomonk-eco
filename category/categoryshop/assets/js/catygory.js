@@ -20,26 +20,6 @@ var arrDog =[
         link :'',
         sold :88
     },
-    { 
-        nameProduce:'Calcium Phosphorus - supports treatment for pets',
-        priceNew:276000,
-        priceOld:552000,
-        image:'../../assets/images/product-category/product-phosphous.png',
-        brand :'Royal Canin',
-        category : 'Dog',
-        link :'',
-        sold :24
-    },
-    { 
-        nameProduce:'Pedigree premium dog food',
-        priceNew:115000,
-        priceOld:200000,
-        image:'../../assets/images/product-category/product-Zenith.png',
-        brand :'Pedigree',
-        category : 'Dog',
-        link :'',
-        sold :14
-    },
 
     { 
         nameProduce:'Freshtrino Doca Dog food for all ages',
@@ -50,17 +30,7 @@ var arrDog =[
         category : 'Dog',
         link :'',
         sold :34
-    },
-    { 
-        nameProduce:'Dr.Kyan Predogen dog milk powder',
-        priceNew:165000,
-        priceOld:190000,
-        image:'../../assets/images/product-category/product-Dr.Kyan.png',
-        brand :'Zenith',
-        category : 'Dog',
-        link :'',
-        sold :88
-    },   
+    }, 
     { 
         nameProduce:'Ferplast Goodbite Natural Chicken Flavor Bones',
         priceNew:63000,
@@ -90,6 +60,46 @@ var arrDog =[
         category : 'Dog',
         link :'',
         sold :93
+    },
+    { 
+        nameProduce:'Smart Heart Gold Dry Dog Food',
+        priceNew:95000,
+        priceOld:150000,
+        image:'../../assets/images/product-category/product-Smart.png',
+        brand :'Smartheart',
+        category : 'Dog',
+        link :'',
+        sold :93
+    },
+    { 
+        nameProduce:'Calcium Phosphorus - supports treatment for pets',
+        priceNew:276000,
+        priceOld:552000,
+        image:'../../assets/images/product-category/product-phosphous.png',
+        brand :'Royal Canin',
+        category : 'Dog',
+        link :'',
+        sold :24
+    },
+    { 
+        nameProduce:'Royal Canin Canine ultamino Dry Dog',
+        priceNew:300000,
+        priceOld:345000,
+        image:'../../assets/images/product-category/product-1.jpg',
+        brand :'Pedigree',
+        category : 'Dog',
+        link :'',
+        sold :14
+    },
+    { 
+        nameProduce:'Dr.Kyan Predogen dog milk powder',
+        priceNew:165000,
+        priceOld:190000,
+        image:'../../assets/images/product-category/product-Dr.Kyan.png',
+        brand :'Zenith',
+        category : 'Dog',
+        link :'',
+        sold :88
     }
 ]    
 
