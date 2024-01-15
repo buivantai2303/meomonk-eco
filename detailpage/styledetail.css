@@ -170,6 +170,7 @@ img{
     margin-top: 10px;
     position: relative;
     overflow: hidden;
+    background-color: #fff;
 }
 
 .main img{
@@ -280,10 +281,10 @@ img{
 .star * {
     margin: 0;
 }
-votetxt{
-    display: block;
-    margin-right:20px;
+.star h3.votetxt {
+    margin-right: 20px; 
 }
+
 
 
 
@@ -322,7 +323,7 @@ votetxt{
 
 .price p{
     margin-right: 20px;
-    margin-left: 10px;
+    
 }
 .price span{
     margin-right: 20px;
@@ -341,6 +342,26 @@ votetxt{
     font-size:1.5rem;
     color: #de0000;
   }
+
+/* --------------Select type */
+.product-types {
+    margin-top: 20px;
+    margin-left:40px;
+}
+
+.product-type-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #ffa900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-type-btn.active {
+    background-color: #484343;
+}
 /* --------------quantity--------------------- */
 .quantity{
     margin-top: 20px;
@@ -385,11 +406,11 @@ label[for="quantity"] {
 .addtocart,
 .buynow{
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 20px;
     justify-content: center;
     display: flex;
     border-radius:15%;
-    flex:1;
+    ;
 }
 .add,.buy{
     border-radius:5px;
@@ -505,7 +526,16 @@ label[for="quantity"] {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom:30px;
+    margin-bottom:50px;
  
+}
+
+.comment_details{
+    display: flex;
+}
+.avt{
+    margin-right: 20px;
 }
 .product-rating h2{
     font-size: 20px;
@@ -537,7 +567,10 @@ label[for="quantity"] {
 .image_rating_zoom_detail img{
     border-radius:5px;
     margin-top: 30px;
+    
+    
 }
+
 .comment_details{
     margin-top: 60px;
 }
@@ -575,9 +608,9 @@ label[for="quantity"] {
 
 .image_rating_zoom{
     width: 300px;
-    height: 420px;
+    height: 380px;
     display: none;
-    
+    margin:10px 20px 50px auto;
     
 }
 
@@ -606,15 +639,43 @@ label[for="quantity"] {
 }
 .product-related{
     flex: 0 0 auto; /* Ngăn các thẻ con co lại để giữ kích thước ban đầu */
-    margin-right: 10px;
+    margin-right: 20px;
     width: 150px;
-    height: 200px;
+    /* height: 200px; */
     align-items: center; 
     text-align: center; 
     margin-bottom: 50px;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
+    border-radius:5px;
+}
+.product-related:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Đổ bóng về phía sau */
+}
+.image-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
+.image-product .image2 {
+    display: none;
+}
+.product-related:hover .image-product .image1 {
+    display: none;
+}
+
+.product-related:hover .image-product .image2 {
+    display: block;
+    
+}
+
+
+.product-related img{
+    border-radius: 5px;
+}
 .image-product{
     width: 150px;
     height: 200px;
@@ -622,5 +683,10 @@ label[for="quantity"] {
 
 }
 .product-relatedDetails{
+    width: 150px;
+    margin-top: 10px;
+}
+.priceproduct-relatedDetails{
+    color:#de0000;
     margin-top: 10px;
 }

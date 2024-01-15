@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="assets/stylesheet/reset.css">
     <link rel="stylesheet" href="assets/stylesheet/category-basic.css">
     <link rel="stylesheet" href="assets/stylesheet/category-main.css">
-    <link rel="stylesheet" href="assets/js/catygory.js">
+
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.4.0-web/css/all.css">
 
 </head>
 <body>
     <div class="main-content">
-        <div class="grid">
-            
+        <div class="grid">            
+            <div class="product-header">
+                <div class="breadscrumb">
+                   <span class="breadscrumb-home"></a>Home</span> / <span class ="breadscrumb-main">Food for Cat</span>
+                </div>
+                
+                <div class = "product-link" >
+                <a href="#" class="button-like-link button-status active" id="lienQuanBtn">Popular</a>
+                <a href="#" class="button-like-link" id="moiNhatBtn">Newest</a>
+                <a href="#" class="button-like-link" id="banChayBtn">Best seller</a>
+                <a href="#" class="button-like-link" id="giaBtn">Price</a>
+            </div>
+            </div>
             <div class="grid_row">
             <div class="grid__column_3">
-                <h3 class="category__heading">Danh Mục Sản Phẩm</h3>
+                <h3 class="category__heading">Danh Mục </h3>
                 <nav class="category">
                     <ul class="category-list">
                         <li class="category-item">
@@ -26,17 +37,17 @@
                         <li class="expandable category-item">
                             <a href="#" class="category-item_link">Product</a>
                             <ul>
-                              <li><a href="#" class="category-item_link">Food for Dog</a></li>
-                              <li><a href="#" class="category-item_link">Food for Cat</a></li>
+                                <li><a href="category.html" class="category-item_link">Food for Dog</a></li>
+                              <li><a href="categoryCat.html" class="category-item_link">Food for Cat</a></li>
                               <li><a href="#" class="category-item_link">Food for Hamsters</a></li>
                               <li><a href="#" class="category-item_link">Food for Bird</a></li>
                               <li><a href="#" class="category-item_link">Food for Fish</a></li>
                               
                             </ul>
                           </li> 
-                        <li class="category-item">
+                        <!-- <li class="category-item">
                             <a href="#" class="category-item_link">Price list </a>
-                        </li>
+                        </li> -->
                         <li class="category-item">
                             <a href="#" class="category-item_link">Book service </a>
                         </li>
@@ -47,7 +58,12 @@
                 </nav>
 
                 <h3 class="brand__heading">Thương Hiệu</h3>
+                <div class="brand-search">
+                    <input type="search" oninput="filterBrands()" class="brand-search_input" value="Zenith"> 
+                    <div class="search-button"></div>
+                </div>
                 <div class="brand">
+
                     <ul class="brand-list">
                         <li class="brand-item">
                             <label>
@@ -62,67 +78,105 @@
                         </li>
                         <li class="brand-item">
                             <label>
-                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Royal Canin"> Royal Canin
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="Royal Canin"> Royal Canin
                             </label>
                         </li>
                         <li class="brand-item">
                             <label>
-                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Doca"> Doca
-                            </label>
-                        </li>
-
-                        <li class="brand-item">
-                            <label>
-                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="FIBs"> FIBs
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="Doca"> Doca
                             </label>
                         </li>
 
                         <li class="brand-item">
                             <label>
-                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Nutrience"> Nutrience
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="FIBs"> FIBs
                             </label>
                         </li>
 
                         <li class="brand-item">
                             <label>
-                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Pedigree"> Pedigree
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="Nutrience"> Nutrience
+                            </label>
+                        </li>
+
+                        <li class="brand-item">
+                            <label>
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="Pedigree"> Pedigree
                             </label>
                         </li>
 
 
                         <li class="brand-item">
                             <label>
-                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Whiskat"> Whiskat
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="Whiskat"> Whiskat
                             </label>
                         </li>
                         <li class="brand-item">
                             <label>
-                                <input type="checkbox" onchange="chooseshowCat()" class="ThuongHieu" value="Tropiclean"> Tropiclean
+                                <input type="checkbox" onchange="choosePorduct()" class="ThuongHieu" value="Tropiclean"> Tropiclean
                             </label>
                         </li>
                     </ul>
                 </div>
 
+                <h3 class="Price__heading">Lọc Giá</h3>
+                <nav class="Price">
+                    <ul class="Price-list">               
+                        <li class="Price-item">
+                            <label>
+                                <input type="checkbox" onchange="choosePorduct()" class="giaban" value="1"> 0đ to 100.000đ
+                            </label>
+                        </li>
+                        <li class="Price-item">
+                            <label>
+                                <input type="checkbox" onchange="choosePorduct()" class="giaban" value="2">  100.000đ to 300.000đ
+                            </label>
+                        </li>
+                        <li class="Price-item">
+                            <label>
+                                <input type="checkbox" onchange="choosePorduct()" class="giaban" value="3"> 300.000đ to 500.000đ
+                            </label>
+                        </li>
+                        <li class="Price-item">
+                            <label>
+                                <input type="checkbox" onchange="choosePorduct()" class="giaban" value="4"> over 500.000đ
+                            </label>
+                        </li>
 
+                    </ul>
+                </nav>
                 
+                <div class="img_banner">
+
+                </div>
         </div>
         <div class="grid__column_9">
-            <div class="product-header">
-                <a href="#" class="button-like-link button-status active" id="lienQuanBtn">Popular</a>
-                <a href="#" class="button-like-link" id="moiNhatBtn">Newest</a>
-                <a href="#" class="button-like-link" id="banChayBtn">Best seller</a>
-                <a href="#" class="button-like-link" id="giaBtn">Price</a>
-            </div>
+
 
             <div class="product">
                 <div class="grid_row" id="product">
+                <!-- <div class="grid__column_2-4">     
+                    <a class="product-item " data-price="25" href="https://www.facebook.com/profile.php?id=100013256856980">                            
+                    <div class="product-item__img" style="background-image:url(assets/images/first-slide-holiday.jpg);"> </div>
+                    <h4 class="product-item__name">Thuốc bả chó dành cho chó biết cười </h4>
+                    <div class="product-item__price">
+                        <span class="product-item__price--old">25.032.000đ</span>
+                        <span class="product-item__price--new">12.039.000đ</span>
+                    </div>    
+                    <div class="product-item-active">
 
+                        <div class="product-item-active__start"><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i><i class="fa-sharp fa-regular fa-star"></i></div>
+                        <div class="product-item-active__info">88 đã bán</div>
+                    </div>           
+                </a>
+            </div> -->
+       
           
              </div>
         </div>
 
         <!-- Phân trang -->
-        <nav>
+        <!-- <nav>
             <ul class="pagination">
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
@@ -130,11 +184,11 @@
                 
                 <li><a href="#">Trang tiếp</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
 </div>  
 </div>
                     </div>
-                    <script src="assets/js/catygory.js"></script>
+                    <script src="assets/js/cat.js"></script>
 </body>
 </html>

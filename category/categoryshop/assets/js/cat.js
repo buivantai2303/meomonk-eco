@@ -1,97 +1,118 @@
-var arrDog =[
+var arrAnimal =[
 
     { 
-        nameProduce:'Smartheart premium granular food',
-        priceNew:30000,
-        priceOld:60000,
-        image:'../../assets/images/product-category/product-Smartheart.png',
-        brand :'Smartheart',
-        category : 'Dog',
+        nameProduce:'Nutrience Original Healthy cat food',
+        priceNew:130000,
+        priceOld:260000,
+        image:'../../assets/images/product-category/nutrience.png',
+        brand :'Nutrience',
+        category : '',
         link :'',
-        sold :424
-    }  ,
+        sold :72
+    },
     { 
-        nameProduce:'Zenith soft dog food',
+        nameProduce:'MININO dry cat food',
+        priceNew:90000,
+        priceOld:180000,
+        image:'../../assets/images/product-category/minino.png',
+        brand :'Minino ',
+        category : '',
+        link :'',
+        sold :72
+    },
+    { 
+        nameProduce:'Whiskas cat food',
         priceNew:300000,
         priceOld:400000,
-        image:'../../assets/images/product-category/product-Pedigree.png',      
-        brand :'Zenith',
-        category : 'Dog',
+        image: '../../assets/images/product-category/whiskas.png',
+        brand :'Whiskat',
+        category : 'Cat',
         link :'',
-        sold :88
+        sold :72
     },
     { 
-        nameProduce:'Calcium Phosphorus - supports treatment for pets',
-        priceNew:276000,
-        priceOld:552000,
-        image:'../../assets/images/product-category/product-phosphous.png',
-        brand :'Royal Canin',
-        category : 'Dog',
+        nameProduce:'Royal Canin Hairball Care cat food',
+        priceNew:459000,
+        priceOld:500000,
+        image:'../../assets/images/product-category/royalcain.png',
+        brand :'Minino ',
+        category : '',
         link :'',
-        sold :24
+        sold :72
     },
     { 
-        nameProduce:'Pedigree premium dog food',
-        priceNew:115000,
-        priceOld:200000,
-        image:'../../assets/images/product-category/product-Zenith.png',
-        brand :'Pedigree',
-        category : 'Dog',
-        link :'',
-        sold :14
-    },
-
-    { 
-        nameProduce:'Freshtrino Doca Dog food for all ages',
-        priceNew:130000,
+        nameProduce:'Pate for cats with pure tuna flavor CAT SEA FISH Pure Tuna Meat',
+        priceNew:30000,
         priceOld:180000,
-        image:'../../assets/images/product-category/product-Freshtrino.png',
-        brand :'Doca',
-        category : 'Dog',
+        image: '../../assets/images/product-category/product-foodCat1.jpg',
+        brand :'Whiskat',
+        category : 'Cat',
         link :'',
-        sold :34
+        sold :72
     },
     { 
-        nameProduce:'Dr.Kyan Predogen dog milk powder',
-        priceNew:165000,
-        priceOld:190000,
-        image:'../../assets/images/product-category/product-Dr.Kyan.png',
-        brand :'Zenith',
-        category : 'Dog',
+        nameProduce:' ROYAL CANIN Kitten cat food',
+        priceNew:125000,
+        priceOld:180000,
+        image: '../../assets/images/product-category/product-foodCat2.jpg',
+        brand :'',
+        category : 'Cat',
         link :'',
-        sold :88
-    },   
+        sold :72
+    },
     { 
-        nameProduce:'Ferplast Goodbite Natural Chicken Flavor Bones',
-        priceNew:63000,
-        priceOld:90000,
-        image:'../../assets/images/product-category/product-Ferplast.png',
-        brand :'Pedigree',
-        category : 'Dog',
+        nameProduce:'ROYAL CANIN Indoor 27 adult cat food',
+        priceNew:120000,
+        priceOld:180000,
+        image: '../../assets/images/product-category/product-foodCat3.jpg',
+        brand :'Whiskat',
+        category : 'Cat',
         link :'',
         sold :43
-    },   
+    },
     { 
-        nameProduce:'Pedigree premium dog food',
-        priceNew:115000,
-        priceOld:200000,
-        image:'../../assets/images/product-category/product-Zenith.png',
-        brand :'Pedigree',
-        category : 'Dog',
+        nameProduce:'Pate for cats with perch flavor, crab stick, SEA SAND, Surimi tuna',
+        priceNew:30000,
+        priceOld:180000,
+        image: '../../assets/images/product-category/product-footCat5.jpg',
+        brand :'Whiskat',
+        category : 'Cat',
         link :'',
-        sold :143
-    },   
+        sold :88
+    },
     { 
-        nameProduce:'Smart Heart Gold Dry Dog Food',
-        priceNew:95000,
-        priceOld:150000,
-        image:'../../assets/images/product-category/product-Smart.png',
-        brand :'Smartheart',
-        category : 'Dog',
+        nameProduce:'Pate for cats with pure tuna flavor CAT SEA FISH Pure Tuna Meat',
+        priceNew:30000,
+        priceOld:180000,
+        image: '../../assets/images/product-category/product-foodCat6.jpg',
+        brand :'Whiskat',
+        category : 'Cat',
         link :'',
-        sold :93
-    }
-]    
+        sold :72
+    },
+    { 
+        nameProduce:'Pate for cats with pure tuna flavor CAT SEA FISH Pure Tuna Meat',
+        priceNew:30000,
+        priceOld:180000,
+        image: '../../assets/images/product-category/product-foodCat7.jpg',
+        brand :'Whiskat',
+        category : 'Cat',
+        link :'',
+        sold :72
+    },
+    { 
+        nameProduce:'Pate for cats with pure tuna flavor CAT SEA FISH Pure Tuna Meat',
+        priceNew:30000,
+        priceOld:180000,
+        image: '../../assets/images/product-category/product-foodCat8.jpg',
+        brand :'Whiskat',
+        category : 'Cat',
+        link :'',
+        sold :72
+    },
+   
+] 
+
 
 function formatCurrency(number) {
     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(number);
@@ -102,13 +123,13 @@ function hienThiProducts(thuonghieuchon_arr = [] , giaban_arr = []) {
     var list = document.getElementById("product");
     list.innerHTML = '';
 
-    for (var i = 0; i < arrDog.length; i++) {
-        var ten = arrDog[i].nameProduce;
-        var giaMoi = arrDog[i].priceNew;
-        var giaCu = arrDog[i].priceOld;
-        var hinh = arrDog[i].image;
-        var productBrand = arrDog[i].brand;
-        var sold = arrDog[i].sold;
+    for (var i = 0; i < arrAnimal.length; i++) {
+        var ten = arrAnimal[i].nameProduce;
+        var giaMoi = arrAnimal[i].priceNew;
+        var giaCu = arrAnimal[i].priceOld;
+        var hinh = arrAnimal[i].image;
+        var productBrand = arrAnimal[i].brand;
+        var sold = arrAnimal[i].sold;
 
         if (thuonghieuchon_arr.length > 0 && !thuonghieuchon_arr.includes(productBrand)) {
             continue;
@@ -148,6 +169,7 @@ function hienThiProducts(thuonghieuchon_arr = [] , giaban_arr = []) {
             </div>`;
     }
 }
+
 
 function toggleStar(star) {
   

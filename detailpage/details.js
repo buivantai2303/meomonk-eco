@@ -87,7 +87,17 @@ updateImageByIndex(0)
 
 
 
+// ------------------------------Select type button------------------------------------------------------------------------------
+function changeColor(button) {
+    // Loại bỏ lớp 'active' từ tất cả các nút
+    var buttons = document.querySelectorAll('.product-type-btn');
+    buttons.forEach(function (btn) {
+        btn.classList.remove('active');
+    });
 
+    // Thêm lớp 'active' cho nút được nhấn
+    button.classList.add('active');
+}
 
 
 //  -----------------------------quantity button-------------------------------------------------------------------------------------
@@ -141,3 +151,4 @@ imageContainers.forEach(image => {
 
 
 // ---------------------------- share------------------------------
+
