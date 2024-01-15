@@ -5,46 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .breadcrumnav li{
-            display: inline-block;
-            vertical-align: middle;
+        .label-span {
+            display: block;
+            margin-bottom: 10px;
+
         }
-        .breadcrumnav a{
-            color:white;
-            background-color:cadetblue;
-            text-decoration: none;
-            position: relative;
-            margin-right: 5px;
-            padding: 0px 11px;
+        .shop{
+            margin:auto 30px ;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
         }
-        .breadcrumnav a::before,
-        .breadcrumnav a::after{
-            content:"";
-            position: absolute;
-            border-color:cadetblue;
-            border-style: solid;
-            border-width: 11px 5px;
-            vertical-align: middle;
+       
+        .descshop{
+            display: flex;
+            flex-wrap: wrap;
         }
-        .breadcrumnav a::before{
-            left:-5px;
-            border-left-color: transparent;
+        .descshop .label-span {
+            flex: 1 0 25%; /* Chia mỗi hàng thành 4 cột */
         }
-        .breadcrumnav a::after{
-            left:100%;
-            border-color: transparent;
-            border-left-color: cadetblue;
+        .logo,.brand,.descshop{
+            margin-right: 20px;
+        }
+        .descshop span{
+                color:#de0000;
+        }
+        .chatandview span {
+            padding: 5px 10px;
+            background-color:#e9c5c5;
+            border: 1px solid #de0000;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius:3px;
+        }
+    
+        .chatandview span:hover {
+            background-color:white;
         }
     </style>
 </head>
 <body>
-    <div class="breadcrum">
-        <ol class="breadcrumnav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Food</a></li>
-            <li><a href="">Dog food</a></li>
-            <li>Thuốc ho cho cún</li>
-        </ol>
+    <div class="shop">
+        <div class="logoshop">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="brand">
+            <div class="nameBrand"> <p>Pet shop</p></div>
+            <div class="timeonline"><p>4hours ago</p></div>
+            <div class="chatandview">
+                <span class="chatwithshop">Chat</span>
+                <span class="viewshop">View</span>     
+            </div>
+           
+        </div>
+        <div class="descshop">
+            <div class="label-span">
+                <label for="label1">Đánh giá:</label>
+                <span id="label1">Span 1</span>
+            </div>
+            <div class="label-span">
+                <label for="label2">Sản phẩm:</label>
+                <span id="label2"> 123</span>
+            </div>
+            <div class="label-span">
+                <label for="label3">Tỉ lệ phản hồi:</label>
+                <span id="label3">99%</span>
+            </div>
+            <div class="label-span">
+                <label for="label4">Tham gia:</label>
+                <span id="label4">5 năm trước</span>
+            </div>
+            <div class="label-span">
+                <label for="label5">Nguời theo dõi:</label>
+                <span id="label5">5</span>
+            </div>
+           
+        </div>
     </div>
 </body>
 </html>
