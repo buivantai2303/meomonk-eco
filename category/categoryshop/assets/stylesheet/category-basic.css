@@ -88,6 +88,7 @@ body {
     }
 } 
 
+
 @media screen and (max-width: 600px) {
     .grid__column_2-4 {
         width: 50%; /* Thiết lập chiều rộng là 50% khi màn hình nhỏ hơn hoặc bằng 600px */
@@ -100,6 +101,14 @@ body {
 @media screen and (max-width: 800px) {
     .product-link{
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 116px) {
+    .img_banner{
+        width: 30%;
+
     }
 
 }

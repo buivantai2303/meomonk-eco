@@ -314,11 +314,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+
+
+  
   document.addEventListener("DOMContentLoaded", function() {
     var buttonLinks = document.querySelectorAll('.button-like-link');
     var buttonStatus = document.querySelector('.button-status');
 
-    // Trigger click event for 'lienQuanBtn' after setting up event listeners
+   
     document.getElementById('lienQuanBtn').click();
 
     buttonLinks.forEach(function(button) {
@@ -333,3 +336,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+function filterBrands() {
+    var searchInput = document.querySelector('.brand-search_input');
+    var brandListItems = document.querySelectorAll('.brand-item');
+
+    var searchText = searchInput.value.toLowerCase();
+
+    brandListItems.forEach(function (item) {
+        // lay label ben trong brandListItems
+        var label = item.querySelector('label');
+        // lay noi dung text 
+        var brandName = label.textContent.toLowerCase();
+
+        // Kiểm tra xem brandName có chứa searchText không
+        if (brandName.includes(searchText)) {
+            // Hiển thị item nếu chứa searchText
+            item.style.display = 'block';
+        } else {
+            // Ẩn item nếu không chứa searchText
+            item.style.display = 'none';
+        }
+    });
+}
