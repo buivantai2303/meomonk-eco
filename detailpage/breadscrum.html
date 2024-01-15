@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .breadcrumnav li{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .breadcrumnav a{
+            color:white;
+            background-color:cadetblue;
+            text-decoration: none;
+            position: relative;
+            margin-right: 5px;
+            padding: 0px 11px;
+        }
+        .breadcrumnav a::before,
+        .breadcrumnav a::after{
+            content:"";
+            position: absolute;
+            border-color:cadetblue;
+            border-style: solid;
+            border-width: 11px 5px;
+            vertical-align: middle;
+        }
+        .breadcrumnav a::before{
+            left:-5px;
+            border-left-color: transparent;
+        }
+        .breadcrumnav a::after{
+            left:100%;
+            border-color: transparent;
+            border-left-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="breadcrum">
+        <ol class="breadcrumnav">
+            <li><a href="">Home</a></li>
+            <li><a href="">Food</a></li>
+            <li><a href="">Dog food</a></li>
+            <li>Thuốc ho cho cún</li>
+        </ol>
+    </div>
+</body>
+</html>

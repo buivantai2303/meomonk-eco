@@ -95,6 +95,56 @@ body{
     border-radius: 50%;
 }
 
+/* -------------------------Breadcrum----------------------------------*/
+.breadcrum{
+   
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.breadcrumnav{
+    list-style: none;
+}
+.breadcrumnav li{
+  display: inline-block;
+  font-weight:bold;
+  font-size: 1rem;
+}
+
+.breadcrumnav li::after{
+   
+  }
+
+.breadcrumnav li:last-child::after{
+    content: "";
+    
+}
+.breadcrumnav a{
+    
+    font-weight: normal;
+    text-decoration: none;
+
+  
+    
+}
+
+.breadcrumnav a::after{
+    content: url('images/next.png');
+    vertical-align: middle;
+}
+
+.breadcrumnav a:hover{
+  
+    text-decoration:underline;
+}
+
+
+
+
+
+
 
 /* -------------------------Contact----------------------------------- */
 .contact{
