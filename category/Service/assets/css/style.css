@@ -1,0 +1,317 @@
+/* General Style */
+
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@400;500;600;700;800;900&amp;display=swap");
+body {
+    font-family: "Anybody";
+    overflow-x: hidden;
+}
+p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #444;
+    margin: 0;
+    font-weight: 400;
+}
+section {
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-family: "DynaPuff";
+    font-size: 76px;
+    font-weight: 600;
+}
+h2 {
+    font-family: "DynaPuff";
+    font-size: 60px;
+    font-weight: 600;
+}
+h3 {
+    font-size: 26px;
+}
+h4 {
+    font-size: 24px;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 18px;
+}
+img {
+    object-fit: cover;
+}
+.gap {
+    padding: 120px 0;
+}
+.no-top {
+    padding-top: 0;
+}
+.no-bottom {
+    padding-bottom: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: block;
+}
+figure {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+/* welcome-to */
+.pet-grooming i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #940c69;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.pet-grooming {
+    position: relative;
+}
+.pet-grooming svg {
+    position: absolute;
+    left: -8px;
+    top: -10px;
+    transition: 5s all;
+}
+.pet-grooming:hover svg {
+    transform: rotate(360deg);
+}
+.welcome-to h2 {
+    padding-bottom: 18px;
+}
+.pet-grooming h4 {
+    font-size: 26px;
+    font-weight: 800;
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+/* accordion */
+.accordion-item.active .heading {
+    color: #bccbb7;
+}
+.accordion-item.active .icon:before {
+    background: #bccbb7;
+}
+.accordion-item.active .icon:after {
+    width: 0;
+}
+.accordion-item {
+    border: 0;
+}
+.accordion-item.active .icon:before {
+    background: #fff;
+}
+.accordion-item .heading {
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.accordion-item .icon {
+    right: 14%;
+    display: block;
+    position: absolute;
+    top: 47%;
+    width: 2.4rem;
+    height: 2.4rem;
+    transform: translateY(-50%);
+    left: 13px;
+    background-color: white;
+    border-radius: 50%;
+    background-color: #feda46;
+}
+.accordion-item.active .title {
+    color: #000;
+    background-color: #feda46;
+}
+.accordion-item .icon:before,
+.accordion-item .icon:after {
+    content: "";
+    width: 14px;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+}
+.progress {
+    height: 8px;
+}
+.accordion-item .icon:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    z-index: -1;
+}
+.accordion-item .content {
+    display: none;
+}
+.content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+.title {
+    text-align: start;
+    padding: 16px 70px;
+    padding-right: 0;
+    padding-right: 0;
+    color: black;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 51px;
+}
+.content {
+    margin-top: 24px;
+    padding: 12px 36px;
+    padding-top: 0px;
+    background-color: #24243500;
+}
+a.heading {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.accordion-item {
+    background-color: transparent;
+}
+.accordion-item:first-of-type {
+    border-radius: 0px;
+}
+.accordion-item.active a.heading {
+    color: black;
+}
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+/*  faq-img */
+.faq-img img {
+    border-radius: 50%;
+    border: 11px solid #fff;
+    margin-bottom: 10px;
+    display: block;
+}
+.faq-img.two img {
+    margin: 0;
+    margin-bottom: 10px;
+    transform: translatex(-40px);
+}
+.faq-img img {
+    width: 245px;
+    border-radius: 50%;
+    border: 11px solid #fff;
+    margin-bottom: 10px;
+    display: block;
+    transform: translateX(23px);
+}
+.faq-img.two {
+    margin-top: 111px;
+    animation: left 8s infinite;
+}
+@keyframes left {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+img.faq-shaps {
+    position: absolute;
+    top: 5%;
+    right: 16%;
+    animation: top 5s infinite;
+}
+
+/* video */
+.video img {
+    width: 100%;
+}
+.video figure {
+    overflow: hidden;
+}
+.video:hover figure img {
+    transform: scale(1.2);
+}
+.video i {
+    z-index: 11;
+}
+.services .pet-grooming {
+    padding: 50px;
+    border: 3px #f2f2f2 solid;
+}
+.services .pet-grooming svg {
+    left: 41px;
+    top: 41px;
+}
+.services .video {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+}
+.team-video .video {
+    position: relative;
+}
+.video i {
+    position: absolute;
+    animation: shadow-pulse 1s infinite;
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/**/
+
+.video figure img,
+.pet-grooming h4 {
+    transition: 0.4s ease-in-out;
+}
+
+.accordion-item.active .icon {
+    background-color: #fa441d;
+}
