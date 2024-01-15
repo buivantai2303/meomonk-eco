@@ -111,13 +111,13 @@ body label{
 
 /* -------------------------Breadcrum----------------------------------*/
 .breadcrum{
-   
+    margin: 30px;
     width: 1170px;
     max-width: calc(100% - 48px);
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .breadcrumnav{
     list-style: none;
 }
@@ -179,12 +179,20 @@ body label{
 
 
 
+.inforproduct{
+    display: flex;
+    width: 1170px;
+    max-width: calc(100% - 48px);
 
+}
 
-
+.containermain{
+    background-color:#f7f0f0;
+    margin-top:20px
+}
 
 .containermaincontent{
-    display: flex;
+    background-color:#fff;
     flex: 1;
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -202,8 +210,8 @@ body label{
 .view-product{
     width: 500px;
     height: 500px;
-    margin: 50px auto;
-    margin-right: 30px;
+    margin: 30px;
+    
     
 }
 .contentmain{
@@ -516,6 +524,8 @@ label[for="quantity"] {
 }
 .sharetxt{
     margin-right: 10px;
+    margin-left: 20px;
+    
 }
 .iconsocial{
     display: flex;
@@ -597,13 +607,16 @@ label[for="quantity"] {
     font-size: 1rem;
     display: flex;
     width: 1170px;
-    max-width: calc(100% - 48px);
+    max-width: calc(100%-48px);
+
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:30px;
     margin-bottom:50px;
     background-color: #fff;
+    border: 2px solid #ffa900;
+    border-radius: 10px;
 }
 .logoshop img{
     height: 70px;
@@ -614,6 +627,7 @@ label[for="quantity"] {
 }
 .brand div{
     flex-direction: column;
+    margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -623,12 +637,16 @@ label[for="quantity"] {
 .descshop{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .descshop .label-span {
     flex: 1 0 25%; /* Chia mỗi hàng thành 4 cột */
 }
 .logo,.brand,.descshop{
     margin-right: 20px;
+}
+.brand{
+    width: 300px;
 }
 .descshop span{
         color:#de0000;
@@ -648,27 +666,28 @@ label[for="quantity"] {
 /* -------------------------------Product-Rating------------------------------- */
 .product-rating{
     background-color: #fff;
-    display: flex;
-    flex: 1;
-    width: 1170px;
-    max-width: calc(100% - 48px);
+    border-radius: 5px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:30px;
     margin-bottom:50px;
+    
  
 }
+
 .product-rating_list h2{
     margin-left: 20px;
+    padding-top: 20px;
 }
 .comment_details{
     display: flex;
     position: relative;
+    background-color:rgb(234, 234, 239);
+    padding:10px 0 20px 0;
 }
 .avt{
-    margin-right: 20px;
-    margin-left: 20px;
+   margin: 30px;
     width: 40px;
     height: 40px;
     object-fit: cover; 
@@ -716,7 +735,10 @@ label[for="quantity"] {
 }
 
 .comment_details{
-    margin-top: 60px;
+    margin-top:20px;
+    /* border: 5px solid #ffa900; */
+    border-radius: 10px;
+
 }
 .product-rating{
     
@@ -732,6 +754,7 @@ label[for="quantity"] {
 
 .image_rating_list_container{
     display: flex;
+    justify-content:space-between;
 }
 .img_rating_detail{
     width: 100px;
@@ -759,6 +782,8 @@ label[for="quantity"] {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    border: 2px solid #ffa900;
+    border-radius: 10px;
 }
 .product-content{
     margin-top:20px;
@@ -766,7 +791,7 @@ label[for="quantity"] {
 .list-productRelated h2{
     font-size:20px; 
     font-weight:bolder;
-    padding-top: 30px;
+   
 }
 .header-title h2{
     margin-left: 20px;
