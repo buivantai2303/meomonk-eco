@@ -29,7 +29,7 @@ function hienThiProducts(thuonghieuchon_arr = [] , giaban_arr = []) {
         var hinh = arrAnimal[i].image;
         var productBrand = arrAnimal[i].brand;
         var sold = arrAnimal[i].sold;
-
+        var link = arrAnimal[i].link;
         if (thuonghieuchon_arr.length > 0 && !thuonghieuchon_arr.includes(productBrand)) {
             continue;
         }
@@ -45,7 +45,7 @@ function hienThiProducts(thuonghieuchon_arr = [] , giaban_arr = []) {
         console.log(ten , giaMoi)
         list.innerHTML += `
             <div class="grid__column_2-4">     
-                <a class="product-item" data-price="25" href="https://www.facebook.com/profile.php?id=100013256856980">                            
+                <a class="product-item" data-price="25" href="${link}">                            
                     <div class="product-item__img" style="background-image:url(${hinh});"></div>
                     <h4 class="product-item__name">${ten}</h4>
                     <div class="product-item__price">
