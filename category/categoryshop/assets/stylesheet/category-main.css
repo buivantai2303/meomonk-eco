@@ -12,7 +12,7 @@ input:focus {
     padding: 12px 0px;
     /* border-bottom: 1px solid ; */
     font-weight: 550;
-
+    /* border-bottom: 1px dotted ; */
 }
 
 
@@ -33,7 +33,7 @@ input:focus {
     padding: 14px 16px;
     display: block;
     transition: right linear 0.1s;
-    border-bottom: 1px dotted ;
+    /* border-bottom: 1px dotted ; */
     }
     
     .category-item_link:hover {
@@ -105,6 +105,7 @@ input:focus {
 }
 
 .brand{
+    background: hsl(60, 50%, 99%);
     max-height: 250px;
     
     overflow-y: auto;
@@ -137,8 +138,8 @@ input:focus {
     text-decoration: none;
     padding: 14px 16px;
     display: block;
-    transition: right linear 0.1s;
-    border-bottom: 1px dotted ;
+    transition: right linear 0.1s;  
+    /* border-bottom: 1px dotted ; */
     }
 
 
@@ -219,12 +220,14 @@ input:focus {
     align-items: center;
     margin-bottom: 15px;
     padding-top:30px ;
+    margin-right: -4px;
 }
 .product-link{
     width: 80%;
      background-color: rgba(0, 0, 0, 0.03);
      padding: 10px;
      padding-left: 19%;
+
      /* padding-right: 30%; */
 }
 
