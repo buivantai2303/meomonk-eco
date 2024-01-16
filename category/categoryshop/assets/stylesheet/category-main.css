@@ -92,12 +92,13 @@
     position: absolute;
     top:0;
     right: 0;
-    width: 30px; /* Adjust as needed */
+    width: 40px; /* Adjust as needed */
     height: 100%;
-    background: url('../images/icons8-search-30.png') center center no-repeat;
+    background: url('../images/icons8-search-30.png') center no-repeat;
     background-size: contain;
     cursor: pointer;
-    
+ 
+    background-size: 50px 50px; 
 }
 
 .brand{
@@ -226,8 +227,8 @@
 
 .breadscrumb{
     font-size: 1.1rem;
-    padding-right: 60px;
-    margin-right: 5%;
+
+    width: 25%;
 }
 
 .breadscrumb-home{
@@ -307,7 +308,7 @@
     font-size: 0.8rem;
     font-weight: 400;
     color: var(--color--text);
-    height: 2.4rem;
+    height: 2.15rem;
     margin: 5px;
     overflow: hidden;
     display: -webkit-box;
@@ -335,6 +336,7 @@
 .product-item__price--new{
     font-size: 0.9rem;
     color: var(--color--primakey);
+    font-weight: bold;
 }
 .product-item-active{
     display: flex;
