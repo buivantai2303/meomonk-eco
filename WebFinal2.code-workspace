@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Documents/Header"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WebFinal2"
+	}
+}
