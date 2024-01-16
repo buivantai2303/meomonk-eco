@@ -58,13 +58,6 @@ table {
 
 
 
-.desc{
-    display: -webkit-box;
-     -webkit-line-clamp:3 ;
-     -webkit-box-orient: vertical;
-     overflow: hidden;
-}
-
 
 
 
@@ -98,26 +91,29 @@ body label{
     text-align: center;
 }
 /* ----------------------Logo---------------------------------------- */
-.logo{
+.hidden{
+    display: none;
+}
+#logo{
     position: fixed;
     top:10px;
     left:10px;
 }
-.logo img{
+
+#logo img{
     width: 120px;
     height: 120px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 /* -------------------------Breadcrum----------------------------------*/
-.breadcrum{
-    margin: 30px;
+
+.breadcrum {  
     width: 1170px;
     max-width: calc(100% - 48px);
-    margin-left: auto;
-    margin-right: auto;
+    padding:30px;
+    margin: auto;
 }
-
 .breadcrumnav{
     list-style: none;
 }
@@ -135,8 +131,6 @@ body label{
     
     font-weight: normal;
     text-decoration: none;
-
-  
     
 }
 
@@ -198,6 +192,7 @@ body label{
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
     
 }
 .containermaincontent .content {
@@ -215,8 +210,8 @@ body label{
     
 }
 .contentmain{
-    width: 700px;
-    height: 500px;
+    width: auto;
+    height: auto;
     margin: 50px auto;
     
 }
@@ -265,7 +260,7 @@ img{
 }
 
 .active{
-    background-color:#ffb900;
+    background-color:#f7f0f0;
     border: 1px solid ;
     border-radius: 5px;
 }
@@ -384,16 +379,20 @@ img{
     width: 500px;
     display: flex;
     margin-top: 20px;
-    background-color: rgb(226, 215, 215);
     border-radius: 5px;
     align-items: center;
-}
 
+}
+.money{
+    background-color:#f7f0f0;
+    border-radius: 5px;
+}
 .price p{
     margin-right: 20px;
     
 }
 .price span{
+    margin-left: 10px;
     margin-right: 20px;
 }
 
@@ -408,7 +407,7 @@ img{
 .new-price {
     font-weight: bold; 
     font-size:1.5rem;
-    color: #de0000;
+    color: #FF8F9C;
   }
 
 /* --------------Select type------------------------------- */
@@ -491,13 +490,13 @@ label[for="quantity"] {
     border-radius:5px;
     width: 200px;
     height: 40px;
-    background-color:burlywood;
+    background-color:#e6d6d6;
     transition: all 0.3s ease-in-out;
     
 }
 
 .add:hover,.buy:hover{
-    background-color:#ffa900;
+    background-color:#FF8F9C;
     transform:scale(1.1);
     cursor: pointer;
 }
@@ -514,8 +513,47 @@ label[for="quantity"] {
 /* ------------------Desc---------------------- */
 .desc{
     margin-top: 20px;
+    line-height:1.5rem;
+}
+.desc h2{
+    font-weight: bold;
+}
+.expand{
+    display: none;
+}
+input[type = "checkbox"]{
+    height: 2em;
+    display: block;
+    appearance: none;
+    
+}
+#lbexpand{
+    
+    border-radius: 5px;
+    text-align: justify;
+}
+#lbexpand:hover{
+    color:#e9c5c5;
+    transition: ease-in-out 0.3s;
+}
+#lbexpand:before {
+    content: "Read More";
 }
 
+input[type="checkbox"]:checked ~ .expand {
+    display: block;
+}
+
+input[type="checkbox"]:checked ~ #lbexpand:before {
+    content: "Read Less";
+}
+
+.dots:has(~input[type="checkbox"]:checked) {
+    display: none;
+}
+.expand:has(~input[type="checkbox"]:checked){
+    display:block;
+}
 /* -------------share---------- */
 
 .share{
@@ -615,7 +653,7 @@ label[for="quantity"] {
     margin-bottom:30px;
     margin-bottom:50px;
     background-color: #fff;
-    border: 2px solid #ffa900;
+    border: 2px solid #FF8F9C;
     border-radius: 10px;
 }
 .logoshop img{
@@ -782,7 +820,7 @@ label[for="quantity"] {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    border: 2px solid #ffa900;
+    border: 2px solid #FF8F9C;
     border-radius: 10px;
 }
 .product-content{

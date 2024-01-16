@@ -34,7 +34,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header-top">
             <div class="container">
                 <ul class="header-social-container">
@@ -671,29 +671,35 @@
     </header>
 
     <div class="containermain">
-        <div class="logo" id="logo">
+        <div class="logofixed" id="logo">
             <a href="../index.html" target="_blank">
                 <img src="images/Logo-no-background.png" alt="logo">
             </a>
     
         </div>
         <div class="contact">
-            <div class="message"><img src="images/fb.png" alt=""></div>
-            <div class="phone"><img src="images/WhatsApp.png" alt=""></div>
-            <div class="zalo"><img src="images/Zalo.png" alt=""></div>
-            <div class="insta"><img src="images/insta.png" alt=""></div>
-            <div class="address"><img src="images/address.png" alt=""></div>
+            <div class="message"><a href="#"><img src="images/Phone.png" alt=""></a></div>
+            <div class="phone"><a href="#"><img src="images/Instagram.png" alt=""></a></div>
+            <div class="zalo"><a href="#"><img src="images/Zalo.png" alt=""></a></div>
+            <div class="insta">
+                <a href="https://www.instagram.com/duongkhair.003/?fbclid=IwAR3aI0KDUOY0pgrR9agilam7P4G7BYrbD9NV5tgnwswMJv1z-XS36ox0Wy0">
+                    <img src="images/Mess.png" alt="">
+                </a>
+            </div>
+            <div class="address"><a href="#"><img src="images/Home.png" alt=""></a></div>
     
         </div>
-        <div class="breadcrum">
+        <div class="inforproduct">
+            <div class="breadcrum">
             <ol class="breadcrumnav">
                 <li><a href="../index.html" target="_blank">Home</a></li>
                 <li><a href="../category/categoryshop/category.html">Food</a></li>
-                <li><a href="">Dog food</a></li>
-                <li>THUỐC HO CHO CÚN</li>
+                <li><a href="">Cat food</a></li>
+                <li>ME-O FOOD TUNA</li>
             </ol>
         </div>
-        
+        </div>
+
         <div class="containermaincontent">
             <div class="inforproduct">
                 <div class="fater-viewproduct">
@@ -705,12 +711,12 @@
                         </div>
                         
                         <div class="list-image">
-                            <div class="active"><img src="images/img1.jpg" alt=""></div>
-                            <div><img src="images/img2.jpg" alt=""></div>
-                            <div><img src="images/img3.jpg" alt=""></div>
-                            <div><img src="images/img4.jpg" alt=""></div>
-                            <div><img src="images/img5.jpg" alt=""></div>
-                            <div><img src="images/img6.jpg" alt=""></div>
+                            <div class="active"><img src="images/catfood-1.jpg" alt=""></div>
+                            <div><img src="images/catfood-1.jpg" alt=""></div>
+                            <div><img src="images/catfood-2.jpg" alt=""></div>
+                            <div><img src="images/catfood-3.jpg" alt=""></div>
+                            <div><img src="images/catfood-4.jpg" alt=""></div>
+                            <div><img src="images/catfood-5.jpg" alt=""></div>
                                   
                         </div>
                         <div id="popup" class="popup">
@@ -755,8 +761,8 @@
                 </div>   
                 <div class="contentmain">
                     <div class="nameproduct">
-                        <h1 class="title"> Thuốc ho cho cún </h1>
-                        <h2 class="brand">Brand: Khải đẹp chai</h2>
+                        <h1 class="title"> Me-O food tuna </h1>
+                        <h2 class="brand">Brand: Khai handsome</h2>
                         <h3 class="productid">Product ID: #563472</h3>
                     </div>
         
@@ -771,13 +777,57 @@
                         </div>                
                     </div>
                     <div class="desc">
-                        <p>Đọc kĩ hướng dẫn trước khi sử dụng </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et enim illo ab soluta eos consequatur, quis alias vel ratione sit, itaque doloribus, molestias magnam? Accusamus nesciunt delectus modi vel?</p>
+                        <div class="origin">
+                            <p>
+                                Our premium cat food, proudly made in Germany, is crafted with the health and well-being of your furry friend in mind. Each bite is a perfect blend of quality ingredients, providing a balanced and nutritious diet for dogs of all breeds and sizes.
+                            </p>
+                    
+                            <h2>Key Features:</h2>
+                            <ul>
+                                <li>High-quality ingredients sourced from trusted suppliers</li>
+                                <li>Rich in essential nutrients for optimal dog health</li>
+                                <li>Formulated to support a shiny coat and strong bones</li>
+                                <li>No artificial preservatives, colors, or flavors</li>
+                                <li>Tasty and palatable for even the pickiest eaters</li>
+                            </ul>
+                        </div>
+                        <span class="dots">...</span>
+                        <div class="expand">
+                            <h2>Ingredients:</h2>
+                        <p>
+                            Our cat food is made with a careful selection of ingredients, including:
+                        </p>
+                        <ul>
+                            <li>Real meat (chicken, beef, or lamb)</li>
+                            <li>Whole grains</li>
+                            <li>Fruits and vegetables</li>
+                            <li>Omega-3 fatty acids</li>
+                            <li>Essential vitamins and minerals</li>
+                        </ul>
+                
+                        <h2>Feeding Guidelines:</h2>
+                        <p>
+                            Follow the recommended feeding guidelines based on your cat's weight and activity level. Always provide fresh water along with the food, and monitor your cat's health for the best results.
+                        </p>
+                
+                        <h2>Why Choose Our Dog Food:</h2>
+                        <p>
+                            We understand that your cat deserves the best. Our dog food is not just a meal; it's a commitment to your pet's health and happiness. Trust in the quality of our German-made cat food to keep your canine companion thriving.
+                        </p>
+                        </div>
+                        <input type="checkbox" id="btn">
+                        <label id="lbexpand" for="btn"></label>
+                
+                        
                     </div>
+
                     <div class="price">
-                        <p>Price:</p>
-                        <span class="old-price">6.000.050₫</span>
-                        <span class="new-price">5.555.000₫</span>
+                        <div class="pricetxt"><p>Price:</p></div>
+                        <div class="money">
+                            <span class="new-price">100.000 VND</span>
+                            <span class="old-price">780.000 VND</span>
+                        </div>
+                        
                     </div>
                     <div class="product-types">
                         <button class="product-type-btn" onclick="changeColor(this)">1 Kg</button>
@@ -937,8 +987,7 @@
                 <div class="timeonline"><label for="label1">Online:</label>
                     <span id="label1">4 hours ago</span> 
                 </div>
-                <div class="chatandview">
-                    
+                <div class="chatandview">                
                     <span class="chatwithshop"><a href="#" style="text-decoration: none;">Chat</a></span>     
                     <span class="viewshop"><a href="../category/categoryshop/category.html" style="text-decoration: none;">View</a></span>     
                 </div>
@@ -997,13 +1046,13 @@
                                    <div class="image_rating_list">
                                     <div class="image_rating_list_container">
                                         <div class="img_rating_detail">
-                                            <img src="images/img3.jpg" alt="">
+                                            <img src="images/catfood-2.jpg" alt="">
                                         </div>
                                         <div class="img_rating_detail">
-                                            <img src="images/img1.jpg" alt="">
+                                            <img src="images/catfood-1.jpg" alt="">
                                         </div>
                                         <div class="img_rating_detail">
-                                            <img src="images/img2.jpg" alt="">
+                                            <img src="images/catfood-5.jpg" alt="">
                                         </div>
                                         <div class="img_rating_detail">
                                             <img src="images/img6.jpg" alt="">
