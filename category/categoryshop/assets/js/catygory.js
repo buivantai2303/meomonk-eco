@@ -51,16 +51,7 @@ var arrDog =[
         link :'',
         sold :143
     },   
-    { 
-        nameProduce:'Smart Heart Gold Dry Dog Food',
-        priceNew:95000,
-        priceOld:150000,
-        image:'../../assets/images/product-category/product-Smart.png',
-        brand :'Smartheart',
-        category : 'Dog',
-        link :'',
-        sold :93
-    },
+
     { 
         nameProduce:'Smart Heart Gold Dry Dog Food',
         priceNew:95000,
