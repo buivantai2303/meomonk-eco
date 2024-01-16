@@ -24,7 +24,8 @@ body {
 
 /* Common */
 .main-body{
-    background: hsl(45, 100%, 99%); 
+    /* background: hsl(45, 100%, 99%);  */
+    background-color:#f7f7f7 ;
 }
 
 .main-content {
@@ -33,7 +34,9 @@ body {
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
-    background: hsl(45, 100%, 99%); 
+    /* background-color: #f7f7f7; */
+    background-color: #fdfcfc;
+    /* background: hsl(45, 100%, 99%);  */
 }
 
 

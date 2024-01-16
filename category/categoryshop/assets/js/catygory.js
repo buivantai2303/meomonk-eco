@@ -264,7 +264,7 @@ function showCat(thuonghieuchon_arr = []) {
 
         list.innerHTML += `
             <div class="grid__column_2-4">     
-                <a class="product-item" data-price="25" href="https://www.facebook.com/profile.php?id=100013256856980">                            
+                <a class="product-item" data-price="25" href="${link}">                            
                     <div class="product-item__img" style="background-image:url(${hinh});"></div>
                     <h4 class="product-item__name">${ten}</h4>
                     <div class="product-item__price">
