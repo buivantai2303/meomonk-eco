@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.label-span {
+    display: block;
+    margin-bottom: 10px;
+}
+.shop {
+    align-items: center;
+    font-size: 1rem;
+    display: flex;
+    width: 1170px;
+    max-width: calc(100%-48px);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border: 2px solid #ff8f9c;
+    border-radius: 10px;
+}
+.logoshop img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+    margin: 30px;
+}
+.brand div {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.productid {
+    margin-top: 20px;
+}
+.descshop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.descshop .label-span {
+    flex: 1 0 25%; /* Chia mỗi hàng thành 4 cột */
+}
+.logo,
+.brand,
+.descshop {
+    margin-right: 20px;
+}
+.brand {
+    width: 300px;
+}
+.descshop span {
+    color: #de0000;
+}
+.chatandview span {
+    padding: 5px 10px;
+    background-color: #e9c5c5;
+    border: 1px solid #de0000;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.chatandview span:hover {
+    background-color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="shop">
+        <div class="logoshop">
+            <a href="#" target="_blank"> <img src="../images/logo.png " alt=""></a>
+         </div>
+         <div class="brand">
+             <div class="nameBrand"> <a href="" style="text-decoration: none;"><p>Pet shop</p></a></div>
+             <div class="timeonline"><label for="label1">Online:</label>
+                 <span id="label1">4 hours ago</span> 
+             </div>
+             <div class="chatandview">                
+                 <span class="chatwithshop"><a href="#" style="text-decoration: none;">Chat</a></span>     
+                 <span class="viewshop"><a href="../category/categoryshop/category.html" style="text-decoration: none;">View</a></span>     
+             </div>
+            
+         </div>
+         <div class="descshop">
+             <div class="label-span">
+                 <label for="label1">Rating:</label>
+                 <span id="label1">3 Vote</span>
+             </div>
+             <div class="label-span">
+                 <label for="label2">Product:</label>
+                 <span id="label2"> 123</span>
+             </div>
+             <div class="label-span">
+                 <label for="label3">Response rate:</label>
+                 <span id="label3">99%</span>
+             </div>
+             <div class="label-span">
+                 <label for="label4">Join:</label>
+                 <span id="label4">5 years ago</span>
+             </div>
+             <div class="label-span">
+                 <label for="label5">Follower:</label>
+                 <span id="label5">5</span>
+             </div>
+            
+         </div>           
+     </div>
+</body>
+</html>

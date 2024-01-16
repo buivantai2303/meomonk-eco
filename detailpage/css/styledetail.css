@@ -628,7 +628,6 @@ input[type="checkbox"]:checked ~ #lbexpand:before {
     display: flex;
     width: 1170px;
     max-width: calc(100%-48px);
-
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -684,6 +683,7 @@ input[type="checkbox"]:checked ~ #lbexpand:before {
 .chatandview span:hover {
     background-color: white;
 }
+
 /* -------------------------------Product-Rating------------------------------- */
 .product-rating {
     background-color: #fff;
