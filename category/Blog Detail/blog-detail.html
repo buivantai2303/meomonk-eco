@@ -35,6 +35,7 @@
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
+        <div class="overlay" data-overlay></div>
         <!--
     - HEADER
   -->
@@ -676,6 +677,860 @@
     </nav>
 </header>
         <main>
+            <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar has-scrollbar" data-mobile-menu>
+            <div class="sidebar-category">
+                <div class="sidebar-top">
+                    <h2 class="sidebar-title">Category</h2>
+
+                    <button
+                        class="sidebar-close-btn"
+                        data-mobile-menu-close-btn
+                    >
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="sidebar-menu-category-list">
+                    <li class="sidebar-menu-category">
+                        <button
+                            class="sidebar-accordion-menu"
+                            data-accordion-btn
+                        >
+                            <div class="menu-title-flex">
+                                <img
+                                    src="../../assets/images/pet-icons/Dog Bowl.png"
+                                    alt="clothes"
+                                    width="20"
+                                    height="20"
+                                    class="menu-title-img"
+                                />
+
+                                <p class="menu-title">Food</p>
+                            </div>
+
+                            <div>
+                                <ion-icon
+                                    name="add-outline"
+                                    class="add-icon"
+                                ></ion-icon>
+                                <ion-icon
+                                    name="remove-outline"
+                                    class="remove-icon"
+                                ></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul
+                            class="sidebar-submenu-category-list"
+                            data-accordion
+                        >
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">Pate</p>
+                                    <data
+                                        value="300"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >30</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Whiskas
+                                    </p>
+                                    <data
+                                        value="60"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >60</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Ganador
+                                    </p>
+                                    <data
+                                        value="50"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >50</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Royal Canin
+                                    </p>
+                                    <data
+                                        value="87"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >87</data
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-menu-category">
+                        <button
+                            class="sidebar-accordion-menu"
+                            data-accordion-btn
+                        >
+                            <div class="menu-title-flex">
+                                <img
+                                    src="../../assets/images/pet-icons/Baby Bottle.png"
+                                    alt="footwear"
+                                    class="menu-title-img"
+                                    width="20"
+                                    height="20"
+                                />
+
+                                <p class="menu-title">Drink</p>
+                            </div>
+
+                            <div>
+                                <ion-icon
+                                    name="add-outline"
+                                    class="add-icon"
+                                ></ion-icon>
+                                <ion-icon
+                                    name="remove-outline"
+                                    class="remove-icon"
+                                ></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul
+                            class="sidebar-submenu-category-list"
+                            data-accordion
+                        >
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Bio Milk
+                                    </p>
+                                    <data
+                                        value="45"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >45</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Esbilac
+                                    </p>
+                                    <data
+                                        value="75"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >75</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Predogen
+                                    </p>
+                                    <data
+                                        value="35"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >35</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Esbilac
+                                    </p>
+                                    <data
+                                        value="26"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >26</data
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-menu-category">
+                        <button
+                            class="sidebar-accordion-menu"
+                            data-accordion-btn
+                        >
+                            <div class="menu-title-flex">
+                                <img
+                                    src="../../assets/images/pet-icons/Cat Care.png"
+                                    alt="clothes"
+                                    class="menu-title-img"
+                                    width="20"
+                                    height="20"
+                                />
+
+                                <p class="menu-title">Medicine</p>
+                            </div>
+
+                            <div>
+                                <ion-icon
+                                    name="add-outline"
+                                    class="add-icon"
+                                ></ion-icon>
+                                <ion-icon
+                                    name="remove-outline"
+                                    class="remove-icon"
+                                ></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul
+                            class="sidebar-submenu-category-list"
+                            data-accordion
+                        >
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Vemedim
+                                    </p>
+                                    <data
+                                        value="46"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >46</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Nexgard Spectra
+                                    </p>
+                                    <data
+                                        value="73"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >73</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Omnix
+                                    </p>
+                                    <data
+                                        value="61"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >61</data
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-menu-category">
+                        <button
+                            class="sidebar-accordion-menu"
+                            data-accordion-btn
+                        >
+                            <div class="menu-title-flex">
+                                <img
+                                    src="../../assets/images/pet-icons/Teddy Bear.png"
+                                    alt="perfume"
+                                    class="menu-title-img"
+                                    width="20"
+                                    height="20"
+                                />
+
+                                <p class="menu-title">Toy</p>
+                            </div>
+
+                            <div>
+                                <ion-icon
+                                    name="add-outline"
+                                    class="add-icon"
+                                ></ion-icon>
+                                <ion-icon
+                                    name="remove-outline"
+                                    class="remove-icon"
+                                ></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul
+                            class="sidebar-submenu-category-list"
+                            data-accordion
+                        >
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">Ball</p>
+                                    <data
+                                        value="12"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >12</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Laser Light
+                                    </p>
+                                    <data
+                                        value="60"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >60</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">Doll</p>
+                                    <data
+                                        value="50"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >50</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Massage Stick
+                                    </p>
+                                    <data
+                                        value="87"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >87</data
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-menu-category">
+                        <button
+                            class="sidebar-accordion-menu"
+                            data-accordion-btn
+                        >
+                            <div class="menu-title-flex">
+                                <img
+                                    src="../../assets/images/pet-icons/Cat Caregivers.png"
+                                    alt="cosmetics"
+                                    class="menu-title-img"
+                                    width="20"
+                                    height="20"
+                                />
+
+                                <p class="menu-title">Service</p>
+                            </div>
+
+                            <div>
+                                <ion-icon
+                                    name="add-outline"
+                                    class="add-icon"
+                                ></ion-icon>
+                                <ion-icon
+                                    name="remove-outline"
+                                    class="remove-icon"
+                                ></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul
+                            class="sidebar-submenu-category-list"
+                            data-accordion
+                        >
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Grooming
+                                    </p>
+                                    <data
+                                        value="68"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >68</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Training
+                                    </p>
+                                    <data
+                                        value="46"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >46</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Veterinary
+                                    </p>
+                                    <data
+                                        value="79"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >79</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Insurance
+                                    </p>
+                                    <data
+                                        value="23"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >23</data
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-menu-category">
+                        <button
+                            class="sidebar-accordion-menu"
+                            data-accordion-btn
+                        >
+                            <div class="menu-title-flex">
+                                <img
+                                    src="../../assets/images/pet-icons/Asian Hat.png"
+                                    alt="glasses"
+                                    class="menu-title-img"
+                                    width="20"
+                                    height="20"
+                                />
+
+                                <p class="menu-title">Hat</p>
+                            </div>
+
+                            <div>
+                                <ion-icon
+                                    name="add-outline"
+                                    class="add-icon"
+                                ></ion-icon>
+                                <ion-icon
+                                    name="remove-outline"
+                                    class="remove-icon"
+                                ></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul
+                            class="sidebar-submenu-category-list"
+                            data-accordion
+                        >
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Noel Hat
+                                    </p>
+                                    <data
+                                        value="50"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >50</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">
+                                        Wizard Hat
+                                    </p>
+                                    <data
+                                        value="48"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >48</data
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="sidebar-menu-category">
+                        <button
+                            class="sidebar-accordion-menu"
+                            data-accordion-btn
+                        >
+                            <div class="menu-title-flex">
+                                <img
+                                    src="../../assets/images/pet-icons/Doge.png"
+                                    alt="bags"
+                                    class="menu-title-img"
+                                    width="20"
+                                    height="20"
+                                />
+
+                                <p class="menu-title">Pet</p>
+                            </div>
+
+                            <div>
+                                <ion-icon
+                                    name="add-outline"
+                                    class="add-icon"
+                                ></ion-icon>
+                                <ion-icon
+                                    name="remove-outline"
+                                    class="remove-icon"
+                                ></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul
+                            class="sidebar-submenu-category-list"
+                            data-accordion
+                        >
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">Cat</p>
+                                    <data
+                                        value="62"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >62</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">Dog</p>
+                                    <data
+                                        value="35"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >35</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">Fish</p>
+                                    <data
+                                        value="80"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >80</data
+                                    >
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a
+                                    href="#"
+                                    class="sidebar-submenu-title"
+                                >
+                                    <p class="product-name">Bird</p>
+                                    <data
+                                        value="75"
+                                        class="stock"
+                                        title="Available Stock"
+                                        >75</data
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product-showcase">
+                <h3 class="showcase-heading">best sellers</h3>
+
+                <div class="showcase-wrapper">
+                    <div class="showcase-container">
+                        <div class="showcase">
+                            <a href="#" class="showcase-img-box">
+                                <img
+                                    src="../../assets/images/fashion/4.jpg"
+                                    alt="baby fabric shoes"
+                                    width="75"
+                                    height="75"
+                                    class="showcase-img"
+                                />
+                            </a>
+
+                            <div class="showcase-content">
+                                <a href="#">
+                                    <h4 class="showcase-title">
+                                        Noel Shirt
+                                    </h4>
+                                </a>
+
+                                <div class="showcase-rating">
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                </div>
+
+                                <div class="price-box">
+                                    <del>$5.00</del>
+                                    <p class="price">$4.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase">
+                            <a href="#" class="showcase-img-box">
+                                <img
+                                    src="../../assets/images/Pet/dog1.jpg"
+                                    alt="men's hoodies t-shirt"
+                                    class="showcase-img"
+                                    width="75"
+                                    height="75"
+                                />
+                            </a>
+
+                            <div class="showcase-content">
+                                <a href="#">
+                                    <h4 class="showcase-title">
+                                        England Cat
+                                    </h4>
+                                </a>
+                                <div class="showcase-rating">
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star-half-outline"
+                                    ></ion-icon>
+                                </div>
+
+                                <div class="price-box">
+                                    <del>$170.00</del>
+                                    <p class="price">$100.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase">
+                            <a href="#" class="showcase-img-box">
+                                <img
+                                    src="../../assets/images/Toy/toy-5.jpg"
+                                    alt="girls t-shirt"
+                                    class="showcase-img"
+                                    width="75"
+                                    height="75"
+                                />
+                            </a>
+
+                            <div class="showcase-content">
+                                <a href="#">
+                                    <h4 class="showcase-title">
+                                        Slide Bridge
+                                    </h4>
+                                </a>
+                                <div class="showcase-rating">
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star-half-outline"
+                                    ></ion-icon>
+                                </div>
+
+                                <div class="price-box">
+                                    <del>$5.00</del>
+                                    <p class="price">$3.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase">
+                            <a href="#" class="showcase-img-box">
+                                <img
+                                    src="../../assets/images/Food/catfood-2.jpg"
+                                    alt="woolen hat for men"
+                                    class="showcase-img"
+                                    width="75"
+                                    height="75"
+                                />
+                            </a>
+
+                            <div class="showcase-content">
+                                <a href="#">
+                                    <h4 class="showcase-title">
+                                        CatSrang
+                                    </h4>
+                                </a>
+                                <div class="showcase-rating">
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                    <ion-icon
+                                        name="star"
+                                    ></ion-icon>
+                                </div>
+
+                                <div class="price-box">
+                                    <del>$15.00</del>
+                                    <p class="price">$12.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <section class="gap">
                 <div class="container">
                     <div class="row">
@@ -999,7 +1854,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="sidebar">
+                            <div class="sidebars">
                                 <h3>Recent Posts</h3>
                                 <div class="boder-bar"></div>
                                 <ul class="recent-post">
@@ -1041,7 +1896,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sidebar">
+                            <div class="sidebars">
                                 <h3>Categories</h3>
                                 <div class="boder-bar"></div>
                                 <ul class="categories">
@@ -1069,7 +1924,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sidebar">
+                            <div class="sidebars">
                                 <h3>Instagram</h3>
                                 <div class="boder-bar"></div>
                                 <ul class="instagram-posts">
@@ -1145,7 +2000,7 @@
                                     @jaycynguci
                                 </h5>
                             </div>
-                            <div class="sidebar">
+                            <div class="sidebars">
                                 <h3>Quick Links</h3>
                                 <div class="boder-bar"></div>
                                 <ul class="quick-links">
@@ -1191,7 +2046,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sidebar">
+                            <div class="sidebars">
                                 <h3>Meta</h3>
                                 <div class="boder-bar"></div>
                                 <ul class="Meta">
@@ -1229,7 +2084,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sidebar sidebar-two">
+                            <div class="sidebars sidebar-two">
                                 <h3>Newsletter</h3>
                                 <div class="boder-bar"></div>
                                 <p>
@@ -1531,7 +2386,7 @@
         <!-- 
     - custom js link
   -->
-  <script src="../../assets/js/script.js"></script>
+  <script src="../js/custom.js"></script>
 
   <!--
 - ionicon link
