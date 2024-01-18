@@ -81,7 +81,7 @@ input:focus {
     margin-top: 10px;
     padding: 5px;
     font-size: 0.8rem;
-    border: 0.5px solid #f1ed16;
+    border: 0.5px solid hsl(353, 100%, 78%);;
     border-radius: 5px;
 
 }
@@ -265,7 +265,7 @@ input:focus {
 
 
 .button-like-link.active {
-    background-color: #ffb900;
+    background-color: hsl(353, 100%, 78%);;
     color: white;
 }
 .button-like-link.active::after {
