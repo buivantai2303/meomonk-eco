@@ -97,11 +97,11 @@ input:focus {
     right: 0;
     width: 40px; /* Adjust as needed */
     height: 100%;
-    background: url('../images/icons8-search-30.png') center no-repeat;
+    background: url('../images/pink-search.png') center no-repeat;
     background-size: contain;
     cursor: pointer;
- 
-    background-size: 50px 50px; 
+    
+    background-size: 27px 27px; 
 }
 
 .brand{
