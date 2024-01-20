@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var title = phukienItem.nameProduce;
            
 
-            console.log(title)
+           
             if(titlesText === title){
                 if(isProductInCart(titlesText,cart)){      
                     var index = findProductIndex(titlesText, cart);
@@ -35,12 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 ;
             }else{
-                console.log('not find')
+
             }
 
 
             // console.log(phukienItem.nameProduce);
-            alert('Add to cart successfully');
+            
         }
  
 
@@ -50,9 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             var cartpopupItem = cartpopup[i];
             var title = cartpopupItem.nameProduce;
-            console.log(titlesText)
 
-            console.log(title)
+
             if(titlesText === title){
                 if(isProductInCart(titlesText,cartPoPup)){
                     var index = findProductIndex(titlesText, cartPoPup);
@@ -74,8 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // console.log(phukienItem.nameProduce);
 
         }
+        alert('Add to cart successfully');
     });
-
+    
 });
 
 
