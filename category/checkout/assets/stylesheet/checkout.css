@@ -376,23 +376,13 @@ textarea {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
-    .grid-row {
-        flex-direction: column;
-    }
-    /* 
-    .sideLeft, .sideRight {
-        width: 100%;
-    } */
-}
+
 
 @media screen and (max-width: 900px) {
-    .sideLeft {
-        width: 100%;
-    }
-    .sideRight {
-        display: none;
-    }
+     .gird-row{
+        flex-direction: column;
+     }
+
 }
 
 /* -----------------------------------*\
