@@ -86,7 +86,7 @@ ul.social-icon {
 ul.social-icon li {
     margin-right: 6px;
 }
-ul.social-icon i {
+ul.social-icon li {
     width: 46px;
     height: 46px;
     justify-content: center;
@@ -96,7 +96,7 @@ ul.social-icon i {
     font-size: 18px;
     color: black;
     padding: 0;
-    background-color: #feda46;
+    background-color: var(--salmon-pink);
 }
 ul.social-icon i:hover {
     color: #fff;
@@ -104,7 +104,7 @@ ul.social-icon i:hover {
 
 /* 15. button */
 .button {
-    background-color: #fe5716;
+    background-color: var(--salmon-pink);
     display: inline-block;
     padding: 16px 40px;
     border-radius: 65px;
@@ -116,14 +116,21 @@ ul.social-icon i:hover {
     text-transform: capitalize;
 }
 .button:hover {
-    color: #fe5716;
+    color: var(--eerie-black);
     background-color: transparent;
     z-index: 1;
 }
+
+.sidebars .button:hover {
+    color: var(--white);
+    background-color: transparent;
+    z-index: 1;
+}
+
 .button:before {
     content: "";
     position: absolute;
-    border: 3px solid #fe5716;
+    border: 3px solid var(--salmon-pink);
     width: 100%;
     height: 100%;
     left: 0;
@@ -188,6 +195,12 @@ ul.list {
 .blog-style-two:hover figure img {
     transform: scale(1.2);
 }
+.video-file {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .blog-text-two {
     margin-top: 26px;
 }
@@ -196,6 +209,10 @@ ul.list {
     padding-top: 12px;
     padding-bottom: 13px;
 }
+.blog-text-two h3:hover {
+    color: var(--salmon-pink);
+}
+
 .blog-text-two p {
     font-size: 16px;
     width: 99%;
@@ -224,7 +241,7 @@ ul.categories li.end a {
 .sidebars {
     padding: 40px 40px;
     margin-bottom: 20px;
-    border: 5px solid #feda46;
+    border: 5px solid var(--salmon-pink);
 }
 .boder-bar {
     display: block;
@@ -401,7 +418,7 @@ ul.tags-cloud li a {
 .sidebars.sidebar-two {
     border: 0;
     margin: 0;
-    background-color: #940c69;
+    background-color: var(--eerie-black);
 }
 .sidebar-two input[type="text"] {
     width: 100%;
@@ -586,7 +603,7 @@ ul.instagram-posts figure:hover:before {
     position: relative;
     margin-left: 30px;
     margin-top: 30px;
-    border: 3px solid #feda46;
+    border: 3px solid var(--salmon-pink);
     align-items: center;
 }
 .comment-data {
@@ -632,7 +649,7 @@ form.leave textarea {
     border: 1px solid #c1c1c1;
     outline: none;
     color: #555;
-    padding-top: 25px;
+    padding: 25px 0 0 25px;
     border-radius: 0;
 }
 form.leave textarea::placeholder {

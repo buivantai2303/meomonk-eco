@@ -127,6 +127,11 @@ figure {
 .accordion-item.active .icon:before {
     background: #fff;
 }
+
+.accordion-item .icon:before,
+.accordion-item .icon:after {
+    background: var(--white) !important;
+}
 .accordion-item .heading {
     display: block;
     text-transform: capitalize;
@@ -148,17 +153,17 @@ figure {
     left: 13px;
     background-color: white;
     border-radius: 50%;
-    background-color: #feda46;
+    background-color: var(--salmon-pink);
 }
 .accordion-item.active .title {
     color: #000;
-    background-color: #feda46;
+    background-color: var(--salmon-pink);
 }
 .accordion-item .icon:before,
 .accordion-item .icon:after {
     content: "";
     width: 14px;
-    height: 1px;
+    height: 3px;
     background: #000000;
     position: absolute;
     left: 50%;
@@ -313,7 +318,7 @@ img.faq-shaps {
 }
 
 .accordion-item.active .icon {
-    background-color: #fa441d;
+    background-color: var(--eerie-black);
 }
 
 /* -----------------------------------*\

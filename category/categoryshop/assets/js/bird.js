@@ -7,7 +7,7 @@ var arrAnimal =[
         image:'../../assets/images/product-category/product-4.jpg',
         brand :'Nutrience',
         category : '',
-        link :'',
+        link :'#',
         sold :72
     }
 ] 

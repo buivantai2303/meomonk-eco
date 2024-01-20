@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MeoMonk - High Quality Pet Food</title>
-
+        <script src="assets/js/shopcart.js"></script>
         <!--
     - favicon
   -->
@@ -208,8 +208,12 @@
                             <span class="count">0</span>
                         </button>
 
-                        <button class="action-btn">
-                            <a href="./category/Shop Cart/shopcart.html"
+                        <button
+                            id="open-cart"
+                            class="action-btn"
+                            data-cart-open-btn
+                        >
+                            <a href="#"
                                 ><ion-icon
                                     name="bag-handle-outline"
                                     style="color: #000"
@@ -4983,6 +4987,79 @@
             </div>
         </footer>
 
+        <!-- cart-popup -->
+        <div id="lightbox" class="lightbox clearfix" data-cart-menu>
+            <div class="white_content">
+                <div class="cart-popup">
+                    <ul>
+                        <!-- <li class="d-flex align-items-center position-relative">
+                            <div class="p-img light-bg">
+                                <img
+                                    src="./assets/images/Food/catfood-1.jpg"
+                                    alt="Product Image"
+                                />
+                            </div>
+
+                            <div class="p-data">
+                                <h3 class="font-semi-bold">Brown Sandwich</h3>
+                                <div class="price">
+                                    <span class="theme-clr font-semi-bold"
+                                        >1
+                                    </span>
+                                    <p class="theme-clr font-semi-bold">
+                                        x $10.50
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="d-flex align-items-center position-relative">
+                            <div class="p-img light-bg">
+                                <img
+                                    src="./assets/images/Food/catfood-2.jpg"
+                                    alt="Product Image"
+                                />
+                            </div>
+
+                            <div class="p-data">
+                                <h3 class="font-semi-bold">Banana Leaves</h3>
+                                <div class="price">
+                                    <span class="theme-clr font-semi-bold"
+                                        >1
+                                    </span>
+                                    <p class="theme-clr font-semi-bold">
+                                        x $12.60
+                                    </p>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+
+                    <div
+                        class="cart-total d-flex align-items-center justify-content-between"
+                    >
+                        <span class="font-semi-bold">Total:</span>
+
+                        <span class="font-semi-bold total"> </span>
+                    </div>
+
+                    <div
+                        class="cart-btns d-flex align-items-center justify-content-between"
+                    >
+                        <a class="font-bold" href="/meomonk-eco/category/Shop Cart/shopcart.html"
+                            >View Cart</a
+                        >
+
+                        <a
+                            class="font-bold theme-bg-clr text-white checkout"
+                            href="/meomonk-eco/category/checkout/Checkout.html"
+                            >Checkout</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--
     - custom js link
   -->
@@ -4999,5 +5076,8 @@
             nomodule
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
+        <script src="assets/js/homeShopCart.js"></script>
+        <script src="assets/js/json.js"></script>
+
     </body>
 </html>
