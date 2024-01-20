@@ -32,7 +32,7 @@ var newParagraph = document.createElement('p');
 newParagraph.className = 'total';
 
 // Tạo nội dung văn bản cho phần tử <p>
-var newContent = document.createTextNode('Total:' + tongTien);
+var newContent = document.createTextNode('Total:' +formatCurrency( tongTien));
 newParagraph.appendChild(newContent);
 
 // Lấy ra phần tử có class là 'order-details'
@@ -53,7 +53,7 @@ orderDetailsDiv.appendChild(newParagraph);
  
     <div class="img"><img src="<${product.image}" alt="Product Image"></div>
     <div class="imge-text tile-product"><Span >${product.nameProduce}</Span></div>
-    <div class="imge-text price-product"><Span>${product.priceNew}đ</Span></div>
+    <div class="imge-text price-product"><Span>${formatCurrency(product.priceNew)}</Span></div>
     <div class="imge-text price-product"><Span>X${product.soLuong}</Span></div>
     `;
 
@@ -62,3 +62,8 @@ orderDetailsDiv.appendChild(newParagraph);
 }
 }
 );
+
+
+function formatCurrency(number) {
+    return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(number);
+}

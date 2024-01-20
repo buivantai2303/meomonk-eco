@@ -12,10 +12,10 @@ var arrPhuKienChoMeo =[
         
     },
     { 
-        nameProduce:'The softest rabbit-shaped bed for cats',
-        priceNew:600000,
-        priceOld:700000,
-        image:'../../assets/images/Toy/toy-1.jpg',
+        nameProduce:'Catsrang Korean Food',
+        priceNew:500000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-2.jpg',
         brand :'Minino ',
         category : '',
         link :'../../detailpage/assets/product-7.html',
@@ -23,13 +23,13 @@ var arrPhuKienChoMeo =[
         soLuong:1
     },  
     { 
-        nameProduce:'Catstages Tower Of Tracks Interactive',
-        priceNew:650000,
-        priceOld:750000,
-        image:'../../assets/images/product-category/product-5.jpg',
+        nameProduce:'Me-O Food Tuna',
+        priceNew:100000,
+        priceOld:700000,
+        image:'../../assets/images/Food/catfood-1.jpg',
         brand :'Minino ',
         category : '',
-        link :'',
+        link :'../../detailpage/assets/product-1.html',
         sold :32,
         soLuong:1
     },
@@ -43,9 +43,87 @@ var arrPhuKienChoMeo =[
         link :'../../detailpage/assets/product-6.html',
         sold :88,
         soLuong:1
+    },
+    { 
+        nameProduce:'Zoi Cat Food',
+        priceNew:230000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-3.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-2.html',
+        sold :88,
+        soLuong:1
+    },
+
+    { 
+        nameProduce:'Kusinta Seafood Soup',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-5.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-8.html',
+        sold :88,
+        soLuong:1
+    },
+    { 
+        nameProduce:'Cat Sleep Bed',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Toy/toy-1.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-7.html',
+        sold :88,
+        soLuong:1
+    },
+
+    { 
+        nameProduce:'Kusinta Fish Soup',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-5.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-6.html',
+        sold :88,
+        soLuong:1
+    },
+
+    { 
+        nameProduce:'Kusinta Chicken Soup',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-5.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-6.html',
+        sold :88,
+        soLuong:1
+    },
+    { 
+        nameProduce:'Short-Haired Cat',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Pet/cat5.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-10.html',
+        sold :88,
+        soLuong:1
+    },
+    { 
+        nameProduce:'Asia Cat',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Pet/cat1.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-9.html',
+        sold :88,
+        soLuong:1
     }
-  
-   
 ] 
 localStorage.setItem("name","viet")
 

@@ -132,6 +132,7 @@ input::placeholder {
 
 body {
     background: var(--white);
+   
 }
 
 /**
@@ -159,10 +160,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Anybody";
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    
 }
 
 .main-content {
@@ -182,7 +184,7 @@ body {
 }
 
 .sideLeft {
-    flex: 1;
+    flex: 1.5;
     padding: 60px;
     background-color: #f9ebea;
     border-radius: 20px;
@@ -202,7 +204,7 @@ li {
 
 .breadcrumb {
     display: flex;
-    padding: 10px;
+    padding: 3%;
     background-color: #f4f4f4;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -218,7 +220,7 @@ li {
     text-decoration: none;
     color: #333;
 
-    font-size: 10px;
+    font-size: 15px;
 }
 
 /* Style the current/active item */
@@ -289,8 +291,13 @@ input[type="radio"] {
 
 .price-product {
     width: 30%;
-    padding-left: 3%;
+
 }
+
+.imge-text span {
+    font-size: 16px; 
+  }
+
 .order-summary {
 }
 
@@ -383,6 +390,14 @@ textarea {
         flex-direction: column;
      }
 
+}
+
+@media screen and (max-width: 440px) {
+    .breadcrumb-link a {
+
+        font-size: 10px;
+    }
+    
 }
 
 /* -----------------------------------*\

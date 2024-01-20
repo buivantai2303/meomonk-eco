@@ -118,10 +118,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     totalElement.innerHTML ="";
-    totalElement.innerHTML =tongTien
+    totalElement.innerHTML =formatCurrency(tongTien);
 
     totalElement1.innerHTML ="";
-    totalElement1.innerHTML =tongTien
+    totalElement1.innerHTML =formatCurrency(tongTien);
+
  
     // Function to append a new row to the table
     function appendTableRow(product) {
@@ -141,8 +142,8 @@ document.addEventListener("DOMContentLoaded", function () {
             </td>
             <td class="product-price">
                 <span class="woocommerce-Price-amount">
-                    <bdi><span class="woocommerce-Price-currencySymbol"></span>${product.priceNew}đ</bdi>
-                    <del>${product.priceOld}đ</del>
+                    <bdi><span class="woocommerce-Price-currencySymbol"></span>${formatCurrency(product.priceNew)}</bdi>
+                    <del>${formatCurrency(product.priceOld)}</del>
                 </span>
             </td>
             <td class="product-quantity">
@@ -150,10 +151,17 @@ document.addEventListener("DOMContentLoaded", function () {
             </td>
             <td class="product-subtotal">
                 <span class="woocommerce-Price-amount">
-                    <bdi><span class="woocommerce-Price-currencySymbol"></span>${product.priceNew *product.soLuong }đ</bdi>
+                    <bdi><span class="woocommerce-Price-currencySymbol"></span>${formatCurrency(product.priceNew *product.soLuong) }</bdi>
                 </span>
             </td>            
-  
+            <td class="product-subtotal">
+            <span class="woocommerce-Price-amount">
+
+
+               <button class ='deleted' onclick="deleteRow(this)>   <img src="../images/delete" alt="">  X</button>
+
+            </span>
+        </td> 
         `;
 
 
@@ -162,3 +170,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+function formatCurrency(number) {
+    return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(number);
+}
+
+function deleteRow(btn) {
+
+    // var row = btn.parentNode.parentNode; // lay td và tr
+    // row.parentNode.removeChild(row); //lay table roi remove tr
+    // const cart = JSON.parse(localStorage.getItem("cart")) || [];  
+
+      // Lấy giá trị của ô trong cùng một hàng
+//   var cellValue = row.cells[0].innerHTML;
+  alert("viet");
+
+
+  }

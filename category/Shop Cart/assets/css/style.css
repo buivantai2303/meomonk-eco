@@ -144,6 +144,11 @@ table.shop_table td.product-subtotal span {
     font-weight: bold;
     font-size: 22px;
 }
+
+.product-price  {
+    padding-right: 10%;
+}
+
 table.shop_table td.product-name a {
     font-weight: bold;
     display: block;
