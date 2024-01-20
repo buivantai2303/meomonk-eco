@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     function addCartItem(product) {
-    console.log(1)
+
     var cartList = document.querySelector('.cart-popup ul');
 
 

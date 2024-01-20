@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             // console.log(phukienItem.nameProduce);
-
+            alert('Add to cart successfully');
         }
  
 
@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var totalElement = document.querySelector('.woocommerce-Price-amount');
     var totalElement1 = document.querySelector('.woocommerce-Price-total');
 
-  
     var tongTien = 0;
         for (var i = 0; i < cartList.length; i++) {
         // Call the function to append a new row with the given product
@@ -154,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <bdi><span class="woocommerce-Price-currencySymbol"></span>${product.priceNew *product.soLuong }đ</bdi>
                 </span>
             </td>            
-
+  
         `;
 
 

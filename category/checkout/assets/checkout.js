@@ -1,7 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
     const payment = document.querySelector(".button"); 
+
+
     payment.addEventListener("click", function () {
         alert('Payment success')
+
+        //thanh toan xong se xoa 
+        localStorage.removeItem('cart'); 
+        localStorage.removeItem('cartPoPup'); 
+
+        //tai lai trang 
+        location.reload();
     })
 
     var cartList = JSON.parse(localStorage.getItem('cart'));
@@ -16,15 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
-    // total.textContent = 'Total: $' 
-    
-    // Tạo một phần tử <p>
+
 var newParagraph = document.createElement('p');
 
-// // Đặt thuộc tính và nội dung cho phần tử <p>
-// newParagraph.style.fontWeight = 'bold';
-// newParagraph.style.paddingTop = '20px';
-// newParagraph.style.paddingLeft = '10px';
+
 newParagraph.className = 'total';
 
 // Tạo nội dung văn bản cho phần tử <p>
