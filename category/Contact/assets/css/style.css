@@ -78,7 +78,7 @@ figure {
 }
 /* 15. button */
 .button {
-    background-color: #fe5716;
+    background-color: var(--salmon-pink);
     display: inline-block;
     padding: 16px 40px;
     border-radius: 65px;
@@ -90,14 +90,14 @@ figure {
     text-transform: capitalize;
 }
 .button:hover {
-    color: #fe5716;
-    background-color: transparent;
+    color: var(--white);
+    background-color: var(--eerie-black);
     z-index: 1;
 }
 .button:before {
     content: "";
     position: absolute;
-    border: 3px solid #fe5716;
+    border: var(--salmon-pink);
     width: 100%;
     height: 100%;
     left: 0;
@@ -116,6 +116,7 @@ button.button {
 .looking form > ul {
     display: flex;
 }
+
 .nice-select.Advice {
     width: 100%;
     height: 50px;
@@ -171,7 +172,7 @@ li.option.selected.focus {
     padding-bottom: 0;
 }
 .looking form {
-    background-color: #feda46;
+    background-color: var(--onyx);
     padding: 40px;
     width: 65%;
     position: absolute;
@@ -190,6 +191,7 @@ li.option.selected.focus {
     font-size: 16px;
 }
 .looking label {
+    color: var(--cultured);
     font-size: 16px;
     font-weight: bold;
     padding-left: 4px;
@@ -448,7 +450,7 @@ svg.golo {
 }
 .find-a-dog input[type="text"] {
     height: 60px;
-    border: 3px solid #feda46;
+    border: 3px solid var(--salmon-pink);
     margin-bottom: 15px;
 }
 .looking.contact form.looking-form {
@@ -477,6 +479,7 @@ h3.awards {
     margin: auto;
 }
 .looking.contact form.looking-form h3 {
+    color: var(--white);
     font-size: 40px;
     font-weight: 800;
 }
@@ -646,7 +649,11 @@ body::-webkit-scrollbar-thumb:hover {
 \*-----------------------------------*/
 
 .container {
-    padding: 0 15px;
+    padding: 0px 15px;
+}
+
+.container .row {
+    padding-top: 50px;
 }
 
 .has-scrollbar {
