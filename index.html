@@ -208,8 +208,12 @@
                             <span class="count">0</span>
                         </button>
 
-                        <button class="action-btn">
-                            <a href="./category/Shop Cart/shopcart.html"
+                        <button
+                            id="open-cart"
+                            class="action-btn"
+                            data-cart-open-btn
+                        >
+                            <a href="#"
                                 ><ion-icon
                                     name="bag-handle-outline"
                                     style="color: #000"
@@ -4982,6 +4986,79 @@
                 </div>
             </div>
         </footer>
+
+        <!-- cart-popup -->
+        <div id="lightbox" class="lightbox clearfix" data-cart-menu>
+            <div class="white_content">
+                <div class="cart-popup">
+                    <ul>
+                        <li class="d-flex align-items-center position-relative">
+                            <div class="p-img light-bg">
+                                <img
+                                    src="./assets/images/Food/catfood-1.jpg"
+                                    alt="Product Image"
+                                />
+                            </div>
+
+                            <div class="p-data">
+                                <h3 class="font-semi-bold">Brown Sandwich</h3>
+                                <div class="price">
+                                    <span class="theme-clr font-semi-bold"
+                                        >1
+                                    </span>
+                                    <p class="theme-clr font-semi-bold">
+                                        x $10.50
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="d-flex align-items-center position-relative">
+                            <div class="p-img light-bg">
+                                <img
+                                    src="./assets/images/Food/catfood-2.jpg"
+                                    alt="Product Image"
+                                />
+                            </div>
+
+                            <div class="p-data">
+                                <h3 class="font-semi-bold">Banana Leaves</h3>
+                                <div class="price">
+                                    <span class="theme-clr font-semi-bold"
+                                        >1
+                                    </span>
+                                    <p class="theme-clr font-semi-bold">
+                                        x $12.60
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div
+                        class="cart-total d-flex align-items-center justify-content-between"
+                    >
+                        <span class="font-semi-bold">Total:</span>
+
+                        <span class="font-semi-bold">$23.10</span>
+                    </div>
+
+                    <div
+                        class="cart-btns d-flex align-items-center justify-content-between"
+                    >
+                        <a class="font-bold" href="JavaScript:void"
+                            >View Cart</a
+                        >
+
+                        <a
+                            class="font-bold theme-bg-clr text-white checkout"
+                            href="JavaScript:void"
+                            >Checkout</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--
     - custom js link
