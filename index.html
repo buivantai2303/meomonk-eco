@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MeoMonk - High Quality Pet Food</title>
         <script src="assets/js/shopcart.js"></script>
+        <script src="assets/js/shop-cart.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <!--
     - favicon
   -->
@@ -3397,7 +3399,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -3478,7 +3480,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -3553,7 +3555,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -3633,7 +3635,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -3704,7 +3706,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -3779,7 +3781,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -3854,7 +3856,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -3931,7 +3933,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -4005,7 +4007,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -4084,7 +4086,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -4160,7 +4162,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -4238,7 +4240,7 @@
                                                 ></ion-icon>
                                             </button>
 
-                                            <button class="btn-action">
+                                            <button class="btn-action buttonAddItem">
                                                 <ion-icon
                                                     name="bag-add-outline"
                                                 ></ion-icon>
@@ -4987,52 +4989,58 @@
             </div>
         </footer>
 
+        <div class="cart">
+            <div class="headercart">
+                <h2>Cart</h2>
+            </div>
+            <div class="cart-items">
+                <!-- <div class="cart-item">
+                    <img src="../meomonk-eco/category/categoryshop/assets/images/Hat/6.jpg" alt="" width="80px">
+                    <div class="cart-item-detail">
+                        <span class="cart-item-detail-title"> Chery hat for cat</span>
+                        <div class="selector-cart">
+                            <i class="fa-solid fa-minus minus-cart"></i>
+                            <input type="text" value="1" class="cart-item-quantity">
+                            <i class="fa-solid fa-plus plus-cart"></i>
+                        </div>
+                        <span class="cart-item-price">$100.000</span>
+                    </div>
+                    <span class="btn-delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <div class="cart-item">
+                    <img src="../meomonk-eco/category/categoryshop/assets/images/Hat/6.jpg" alt="" width="80px">
+                    <div class="cart-item-detail">
+                        <span class="cart-item-detail-title"> Chery hat for cat</span>
+                        <div class="selector-cart">
+                            <i class="fa-solid fa-minus minus-cart"></i>
+                            <input type="text" value="1" class="cart-item-quantity">
+                            <i class="fa-solid fa-plus plus-cart"></i>
+                        </div>
+                        <span class="cart-item-price">$100.000</span>
+                    </div>
+                    <span class="btn-delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div> -->
+            </div>
+            <div class="cart-total">
+                <div class="fila">
+                    <strong> Total</strong>
+                    <span class="cart-pricetotal">120.000</span>
+                </div>
+                <button class="btn-pay">Pay<i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+    </div>
+
+
         <!-- cart-popup -->
-        <div id="lightbox" class="lightbox clearfix" data-cart-menu>
+        <!-- <div id="lightbox" class="lightbox clearfix" data-cart-menu>
             <div class="white_content">
                 <div class="cart-popup">
                     <ul>
-                        <!-- <li class="d-flex align-items-center position-relative">
-                            <div class="p-img light-bg">
-                                <img
-                                    src="./assets/images/Food/catfood-1.jpg"
-                                    alt="Product Image"
-                                />
-                            </div>
-
-                            <div class="p-data">
-                                <h3 class="font-semi-bold">Brown Sandwich</h3>
-                                <div class="price">
-                                    <span class="theme-clr font-semi-bold"
-                                        >1
-                                    </span>
-                                    <p class="theme-clr font-semi-bold">
-                                        x $10.50
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="d-flex align-items-center position-relative">
-                            <div class="p-img light-bg">
-                                <img
-                                    src="./assets/images/Food/catfood-2.jpg"
-                                    alt="Product Image"
-                                />
-                            </div>
-
-                            <div class="p-data">
-                                <h3 class="font-semi-bold">Banana Leaves</h3>
-                                <div class="price">
-                                    <span class="theme-clr font-semi-bold"
-                                        >1
-                                    </span>
-                                    <p class="theme-clr font-semi-bold">
-                                        x $12.60
-                                    </p>
-                                </div>
-                            </div>
-                        </li> -->
+                        
                     </ul>
 
                     <div
@@ -5058,9 +5066,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!--
+
+        
     - custom js link
   -->
         <script src="./assets/js/script.js"></script>
