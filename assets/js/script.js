@@ -273,3 +273,114 @@ document.addEventListener("DOMContentLoaded", function () {
         lightBox.classList.remove("active");
     });
 });
+
+
+
+
+
+// ----------------------------Popup showcase-----------------------------------------------
+document.addEventListener('DOMContentLoaded', function () {
+    const eyeButtons = document.querySelectorAll('.buttonPreview');
+    const popUpShowcase = document.getElementById('popUpShowcase');
+    const closePopUpButton = document.getElementById('closePopUp');
+    const popupImage = document.querySelector('.pop-up-showcase img');
+    const popupTitle = document.querySelector('.pop-up-showcase h3');
+
+    eyeButtons.forEach(function (button) {
+        button.addEventListener('mouseup', function (event) {
+            event.stopPropagation();
+            const productId = button.getAttribute('data-product-id');
+            displayProductDetails(productId);
+            popUpShowcase.style.display = 'block';
+            popUpShowcase.style.zIndex = '1000';
+        });
+    });
+
+    closePopUpButton.addEventListener('click', function () {
+        popUpShowcase.style.display = 'none';
+        popUpShowcase.style.zIndex = '';
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target === popUpShowcase) {
+            popUpShowcase.style.display = 'none';
+            popUpShowcase.style.zIndex = '';
+        }
+    });
+
+    function displayProductDetails(productId) {
+        const productDetails = getProductDetailsById(productId);
+        popupImage.src = productDetails.image;
+        popupTitle.textContent = productDetails.title;
+        // Các thông tin khác cần được cập nhật tương tự...
+    }
+
+    function getProductDetailsById(productId) {
+        
+        if (productId === 'product-1') {
+            return {
+                image: './assets/images/product-category/product-1_0.jpg',
+                title: 'Royal Canin Canine Ultamino Dry Dog Food',
+            };
+        } else if (productId === 'product-2') {
+            return {
+                image: './assets/images/product-category/product-2.jpg',
+                title: 'Aqueon Shrimp Pellets FishFood',
+            };
+        }else if (productId === 'product-3') {
+            return {
+                image: './assets/images/product-category/product-3.jpg',
+                title: 'Wardley Shrimp Pellet Fish Food for Bottom and Algae Eaters 9oz',
+            };
+        }else if (productId === 'product-4') {
+            return {
+                image: './assets/images/product-category/product-4.jpg',
+                title: 'ZUPREEM MACAW FRUIT BLEND 3.5',
+            };
+        }else if (productId === 'product-5') {
+            return {
+                image: './assets/images/product-category/product-5.jpg',
+                title: 'Catstages Tower of Tracks Interactive 3-Tier Cat Toy',
+            };
+        }else if (productId === 'product-6') {
+            return {
+                image: './assets/images/product-category/product-6.jpg',
+                title: 'Comfort Zone Multi-Cat Diffuser: Home Kit',
+            };
+        }
+        else if (productId === 'product-7') {
+            return {
+                image: './assets/images/product-category/product-7.jpg',
+                title: 'Joint Care Canine Joint Support Supplement',
+            };
+        }else if (productId === 'product-8') {
+            return {
+                image: './assets/images/product-category/product-8.jpg',
+                title: 'ROYAL CANIN URINARY CARE WET',
+            };
+        }else if (productId === 'product-9') {
+            return {
+                image: './assets/images/product-category/product_9.png',
+                title: 'Iams Proactive Health MiniChunks Small Kibble Adult Chicken & Whole Grain Dry Dog Food ',
+            };
+        }else if (productId === 'product-10') {
+            return {
+                image: './assets/images/product-category/product_10.png',
+                title: 'Purina ONE Natural SmartBlend Chicken & Rice Formula Dry Dog Food',
+            };
+        }else if (productId === 'product-11') {
+            return {
+                image: './assets/images/product-category/product_11.png',
+                title: 'Pedigree Complete Nutrition Grilled Steak & Vegetable Flavor Dog Kibble Adult Dry Dog Food',
+            };
+        }else if (productId === 'product-12') {
+            return {
+                image: './assets/images/product-category/product-12.webp',
+                title: 'American Journey Limited Ingredient Salmon & Sweet Potato Recipe Grain-Free Dry Dog Food',
+            };
+        }
+        
+        
+        
+    }
+});
