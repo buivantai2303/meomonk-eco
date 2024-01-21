@@ -1,5 +1,4 @@
 var arrAnimal =[
-
     { 
         nameProduce:'King Hat for noble cats',
         priceNew:450000,
@@ -8,7 +7,33 @@ var arrAnimal =[
         brand :'Nutrience',
         category : '',
         link :'../../detailpage/assets/product-3.html',
-        sold :72
+        sold :72,
+        soLuong:1
+        
+    },
+   
+    { 
+        nameProduce:'Chery Hat For Cat',
+        priceNew:56000,
+        priceOld:700000,
+        image:'../../assets/images/Hat/6.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-6.html',
+        sold :88,
+        soLuong:1
+    },
+
+    { 
+        nameProduce:'Short-Haired Cat',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Pet/cat5.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-10.html',
+        sold :88,
+        soLuong:1
     },
     { 
         nameProduce:'The softest rabbit-shaped bed for cats',
@@ -29,18 +54,7 @@ var arrAnimal =[
         category : '',
         link :'',
         sold :32
-    },
-    { 
-        nameProduce:'Cherry Cat',
-        priceNew:560000,
-        priceOld:700000,
-        image:'../../assets/images/Hat/6.jpg',
-        brand :'Minino ',
-        category : '',
-        link :'../../detailpage/assets/product-6.html',
-        sold :88
     }
-  
    
 ] 
 

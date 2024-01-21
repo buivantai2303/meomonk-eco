@@ -1,5 +1,26 @@
 var arrDog =[
-
+    { 
+        nameProduce:'Pedigree Dry Dog Food',
+        priceNew:799000,
+        priceOld:900000,
+        image:'../../assets/images/product-category/product_11_0.png',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-11.html',
+        sold :88,
+        soLuong:1
+    },
+    {
+    nameProduce:'American Journey Limited Ingredient Salmon',
+    priceNew:350000,
+    priceOld:500000,
+    image:'../../assets/images/product-category/product-12.webp',
+    brand :'Minino ',
+    category : '',
+    link :'../../detailpage/assets/product-12.html',
+    sold :88,
+    soLuong:1
+},
     { 
         nameProduce:'Smartheart premium granular food',
         priceNew:30000,

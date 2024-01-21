@@ -134,7 +134,18 @@ var arrPhuKienChoMeo =[
         link :'../../detailpage/assets/product-9.html',
         sold :88,
         soLuong:1
-    }
+    },
+    {
+    nameProduce:'American Journey Limited Ingredient Salmon',
+    priceNew:350000,
+    priceOld:500000,
+    image:'../../assets/images/product-category/product-12.webp',
+    brand :'Minino ',
+    category : '',
+    link :'../../detailpage/assets/product-9.html',
+    sold :88,
+    soLuong:1
+}
 
 ] 
 localStorage.setItem("name","viet")
