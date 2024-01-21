@@ -365,12 +365,12 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (productId === "product-11") {
             return {
                 image: "./assets/images/product-category/product_11.png",
-                title: "Pedigree Complete Nutrition Grilled Steak & Vegetable Flavor Dog Kibble Adult Dry Dog Food",
+                title: "Pedigree Complete Nutrition Grilled Steak",
             };
         } else if (productId === "product-12") {
             return {
                 image: "./assets/images/product-category/product-12.webp",
-                title: "American Journey Limited Ingredient Salmon & Sweet Potato Recipe Grain-Free Dry Dog Food",
+                title: "American Journey Limited Ingredient Salmon",
             };
         }
     }
