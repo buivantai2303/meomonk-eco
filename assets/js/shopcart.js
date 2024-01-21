@@ -15,21 +15,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var titlesText = titles[0].textContent;
     addButton.addEventListener("click", function () {
+
+        // lay value so luong
+        var quantityInput = document.getElementById("quantity");
+        var currentValue = quantityInput.value;
+        var integerValue = parseInt(currentValue);
+        console.log( parseInt(currentValue))
+        //
+
+
         for (var i = 0; i < phukienChoMeo.length; i++) {
-
             var phukienItem = phukienChoMeo[i];
-            var title = phukienItem.nameProduce;
-           
+            var title = phukienItem.nameProduce;           
 
-           
             if(titlesText === title){
                 if(isProductInCart(titlesText,cart)){      
                     var index = findProductIndex(titlesText, cart);
-                    cart[index].soLuong +=1; 
+                    cart[index].soLuong +=parseInt(integerValue);
   
                     localStorage.setItem("cart", JSON.stringify(cart));  
                     
                 }else{
+                    phukienItem.soLuong += parseInt(integerValue)-1;
                     cart.push(phukienItem);
                     localStorage.setItem("cart", JSON.stringify(cart));   
                 }
@@ -156,9 +163,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </td>            
             <td class="product-subtotal">
             <span class="woocommerce-Price-amount">
-
-
-               <button class ='deleted' onclick="deleteRow(this)>   <img src="../images/delete" alt="">  X</button>
+            <button class="deleted" type="button" onclick="deleteRow(this)">
+   
+            X
+         </button>
 
             </span>
         </td> 
@@ -176,13 +184,28 @@ function formatCurrency(number) {
 
 function deleteRow(btn) {
 
-    // var row = btn.parentNode.parentNode; // lay td và tr
-    // row.parentNode.removeChild(row); //lay table roi remove tr
+    var row = btn.parentNode.parentNode.parentNode; // lay span lay td và tr
+    row.parentNode.removeChild(row); //lay table roi remove tr
     // const cart = JSON.parse(localStorage.getItem("cart")) || [];  
 
       // Lấy giá trị của ô trong cùng một hàng
-//   var cellValue = row.cells[0].innerHTML;
-  alert("viet");
+    var valueInColumn1 = row.cells[1].querySelector('a'); //cell tra ve mot collection cua tr
+    var textContent = valueInColumn1.innerText;
 
 
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];  // tra ve mot mang chua object json 
+    console.log(cart)
+    for (var i = 0; i < cart.length; i++) {
+        var nameProduct =cart[i].nameProduce
+
+        if(nameProduct === textContent){
+            var index = findProductIndex(nameProduct, cart);
+            cart.splice(index, 1);
+            localStorage.setItem('cart',JSON.stringify(cart));
+        }
+
+    }
+
+
+      
   }
