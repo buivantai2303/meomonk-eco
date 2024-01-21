@@ -40,343 +40,532 @@
 -->
 
 <header>
-<div class="header-top">
-    <div class="container">
-        <ul class="header-social-container">
-            <li>
-                <a href="#" class="social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
+    <div class="header-top">
+        <div class="container">
+            <ul class="header-social-container">
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
 
-            <li>
-                <a href="#" class="social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-            </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
 
-            <li>
-                <a href="#" class="social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
 
-            <li>
-                <a href="#" class="social-link">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-            </li>
-        </ul>
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
 
-        <div class="header-alert-news">
-            <p>
-                <b>Free Shipping</b>
-                This Week Order Over - 5.000.000 VND
-            </p>
-        </div>
+            <div class="header-alert-news">
+                <p>
+                    <b>Free Shipping</b>
+                    This Week Order Over - 5.000.000 VND
+                </p>
+            </div>
 
-        <div class="header-top-actions">
-            <select name="currency">
-                <option value="usd">VND</option>
-                <option value="eur">USD &dollar;</option>
-            </select>
+            <div class="header-top-actions">
+                <select name="currency">
+                    <option value="usd">VND</option>
+                    <option value="eur">USD &dollar;</option>
+                </select>
 
-            <select name="language">
-                <option value="en-VN">Vietnamese</option>
-                <option value="es-ES">English</option>
-                <option value="fr">Fran&ccedil;ais</option>
-            </select>
-        </div>
-    </div>
-</div>
-
-<div class="header-main">
-    <div class="container">
-        <a href="../../index.html" class="header-logo">
-            <img
-                src="../../assets/images/logo/logo.png"
-                alt="Anon's logo"
-                style="width:150px; height:150px"
-              
-            />
-        </a>
-
-        <div class="header-search-container">
-            <input
-                type="search"
-                name="search"
-                class="search-field"
-                placeholder="Enter your product name..."
-            />
-
-            <button class="search-btn">
-                <ion-icon name="search-outline"></ion-icon>
-            </button>
-        </div>
-
-        <div class="header-user-actions">
-            <a href="../login/index.html"><button class="action-btn">
-                <ion-icon name="person-outline"></ion-icon>
-            </button></a>
-
-            <button class="action-btn">
-                <a href="../Shop Cart/shopcart.html"><ion-icon name="heart-outline" style="color: #000;"></ion-icon></a>
-                <span class="count">0</span>
-            </button>
-
-            <button class="action-btn">
-                <a href="../Shop Cart/shopcart.html"><ion-icon name="bag-handle-outline" style="color: #000;"></ion-icon></a>
-                <span class="count">0</span>
-            </button>
+                <select name="language">
+                    <option value="en-VN">Vietnamese</option>
+                    <option value="es-ES">English</option>
+                    <option value="fr">Fran&ccedil;ais</option>
+                </select>
+            </div>
         </div>
     </div>
-</div>
 
-<nav class="desktop-navigation-menu">
-    <div class="container">
-        <ul class="desktop-menu-category-list">
+    <div class="header-main">
+        <div class="container">
+            <a href="../../index.html" class="header-logo">
+                <img
+                    src="../../assets/images/logo/logo.png"
+                    alt="Anon's logo"
+                    style="width:150px; height:150px;"
+                />
+            </a>
+
+            <div class="header-search-container">
+                <input
+                    type="search"
+                    name="search"
+                    class="search-field"
+                    placeholder="Enter your product name..."
+                />
+
+                <button class="search-btn">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="header-user-actions">
+                <a href="../../category/login/index.html"><button class="action-btn">
+                    <ion-icon name="person-outline"></ion-icon>
+                </button></a>
+
+                <button class="action-btn">
+                    <a href="../../category/Like Cart/likeCart.html"><ion-icon name="heart-outline" style="color: #000;"></ion-icon></a>
+                    
+                </button>
+
+                <button class="action-btn">
+                    <a href="../../category/Shop Cart/shopcart.html"><ion-icon name="bag-handle-outline" style="color: #000;"></ion-icon></a>
+                    
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="desktop-navigation-menu">
+        <div class="container">
+            <ul class="desktop-menu-category-list">
+                <li class="menu-category">
+                    <a href="../../index.html" class="menu-title">Home</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="../../category/categoryshop/category.html" class="menu-title">Categories</a>
+
+                    <div class="dropdown-panel">
+                        <ul class="dropdown-panel-list">
+                            <li class="menu-title">
+                                <a href="../../category/categoryshop/category.html">Food</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/categoryCat.html">Cat</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/categoryDog.html">Dog</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/categoryFish.html">Fish</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/categoryBird.html">Bird</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/category.html">Other</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">
+                                    <img
+                                        src="../../assets/images/electronics-banner-1.jpg"
+                                        alt="Food"
+                                        width="250"
+                                        height="119"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="dropdown-panel-list">
+                            <li class="menu-title">
+                                <a href="../../category/categoryshop/medicine.html">Medicine</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/medicine.html">Cattle</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/medicine.html">Poultry</a>
+                            </li>
+ 
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/medicine.html">Pet</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/medicine.html">fishery</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/medicine.html">other</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">
+                                    <img
+                                        src="../../assets/images/medicine-banner.jpg"
+                                        alt="medicine"
+                                        width="250"
+                                        height="119"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="dropdown-panel-list">
+                            <li class="menu-title">
+                                <a href="../../category/categoryshop/AccessoriesCat.html">Toy</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/AccessoriesCat.html">Racoon</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/AccessoriesCat.html">Cozy Socks</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/AccessoriesCat.html">Roop</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/AccessoriesCat.html">Ball</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/categoryshop/AccessoriesCat.html">Cup</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">
+                                    <img
+                                        src="../../assets/images/toy-banner.jpg"
+                                        alt="toy"
+                                        width="250"
+                                        height="119"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="dropdown-panel-list">
+                            <li class="menu-title">
+                                <a href="../../category/Service/service.html">Services</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/Service/service.html">Grooming</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/Service/service.html">Training</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/Service/service.html">Veterinary</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/Service/service.html">Rx Care</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="../../category/Service/service.html">Insurance</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">
+                                    <img
+                                        src="../../assets/images/service-banner.jpg"
+                                        alt="service"
+                                        width="250"
+                                        height="119"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu-category">
+                    <a href="../../category/categoryshop/categoryCat.html" class="menu-title">Food</a>
+
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/categoryBird.html">OEM</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/categoryFish.html">ODM</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/categoryFish.html">Chews</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/categoryBird.html">POTO</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <a href="../../category/categoryshop/AccessoriesCat.html" class="menu-title">Toy</a>
+
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/AccessoriesCat.html">Sand</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/AccessoriesDog.html">Ball</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/AccessoriesCat.html">Doll</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/AccessoriesDog.html">Kit</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <a href="../../category/categoryshop/medicine.html" class="menu-title">Medicine</a>
+
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/medicine.html">Cattle</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/medicine.html">Poultry</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/medicine.html">Fishery</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/categoryshop/medicine.html">Pet</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <a href="../../category/Service/service.html" class="menu-title">Service</a>
+
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item">
+                            <a href="../../category/Service/service.html">Grooming</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/Service/service.html">Training</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/Service/service.html">Veterinary</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="../../category/Service/service.html">Insurance</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <a href="../../category/Blog/blog.html" class="menu-title">Blog</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="../../category/Contact/contact.html" class="menu-title">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+        <button class="action-btn" data-mobile-menu-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+
+            
+        </button>
+
+        <button class="action-btn">
+            <a href="../../index.html"><ion-icon name="home-outline"></ion-icon></a>
+        </button>
+
+        <button class="action-btn">
+            <a href="../../category/Like Cart/likeCart.html"><ion-icon name="heart-outline"></ion-icon></a>
+
+        </button>
+
+        <button class="action-btn" data-mobile-menu-open-btn>
+            <ion-icon name="grid-outline"></ion-icon>
+        </button>
+    </div>
+
+    <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+        <div class="menu-top">
+            <h2 class="menu-title">Menu</h2>
+
+            <button class="menu-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+
+        <ul class="mobile-menu-category-list">
             <li class="menu-category">
                 <a href="../../index.html" class="menu-title">Home</a>
             </li>
 
             <li class="menu-category">
-                <a href="../../category/categoryshop/category.html" class="menu-title">Categories</a>
+                <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Food</p>
 
-                <div class="dropdown-panel">
-                    <ul class="dropdown-panel-list">
-                        <li class="menu-title">
-                            <a href="#">Food</a>
-                        </li>
+                    <div>
+                        <ion-icon
+                            name="add-outline"
+                            class="add-icon"
+                        ></ion-icon>
+                        <ion-icon
+                            name="remove-outline"
+                            class="remove-icon"
+                        ></ion-icon>
+                    </div>
+                </button>
 
-                        <li class="panel-list-item">
-                            <a href="#">Cat</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Dog</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Fish</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Bird</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Other</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">
-                                <img
-                                    src="../../assets/images/electronics-banner-1.jpg"
-                                    alt="Food"
-                                    width="250"
-                                    height="119"
-                                />
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="dropdown-panel-list">
-                        <li class="menu-title">
-                            <a href="../../category/categoryshop/categoryCat.html">Medicine</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Cattle</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Poultry</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Pet</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">fishery</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">other</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">
-                                <img
-                                    src="../../assets/images/medicine-banner.jpg"
-                                    alt="medicine"
-                                    width="250"
-                                    height="119"
-                                />
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="dropdown-panel-list">
-                        <li class="menu-title">
-                            <a href="../../category/categoryshop/AccessoriesCat.html">Toy</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Racoon</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Cozy Socks</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Roop</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Ball</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Cup</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">
-                                <img
-                                    src="../../assets/images/toy-banner.jpg"
-                                    alt="toy"
-                                    width="250"
-                                    height="119"
-                                />
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class="dropdown-panel-list">
-                        <li class="menu-title">
-                            <a href="../../category/Service/service.html">Services</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Grooming</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Training</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Veterinary</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Rx Care</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">Insurance</a>
-                        </li>
-
-                        <li class="panel-list-item">
-                            <a href="#">
-                                <img
-                                    src="../../assets/images/service-banner.jpg"
-                                    alt="service"
-                                    width="250"
-                                    height="119"
-                                />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="menu-category">
-                <a href="../../category/categoryshop/categoryCat.html" class="menu-title">Food</a>
-
-                <ul class="dropdown-list">
-                    <li class="dropdown-item">
-                        <a href="#">OEM</a>
+                <ul class="submenu-category-list" data-accordion>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/category.html" class="submenu-title">OEM</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">ODM</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/category.html" class="submenu-title">ODM</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">Chews</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/category.html" class="submenu-title">Chews</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">POTO</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/category.html" class="submenu-title">POTO</a>
                     </li>
                 </ul>
             </li>
 
             <li class="menu-category">
-                <a href="../../category/categoryshop/AccessoriesDog.html" class="menu-title">Toy</a>
+                <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Toy</p>
 
-                <ul class="dropdown-list">
-                    <li class="dropdown-item">
-                        <a href="#">Sand</a>
+                    <div>
+                        <ion-icon
+                            name="add-outline"
+                            class="add-icon"
+                        ></ion-icon>
+                        <ion-icon
+                            name="remove-outline"
+                            class="remove-icon"
+                        ></ion-icon>
+                    </div>
+                </button>
+
+                <ul class="submenu-category-list" data-accordion>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/AccessoriesCat.html" class="submenu-title">Sand</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">Ball</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/AccessoriesCat.html" class="submenu-title">Ball</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">Doll</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/AccessoriesCat.html" class="submenu-title">Doll</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">Kit</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="menu-category">
-                <a href="#" class="menu-title">Medicine</a>
-
-                <ul class="dropdown-list">
-                    <li class="dropdown-item">
-                        <a href="#">Cattle</a>
-                    </li>
-
-                    <li class="dropdown-item">
-                        <a href="#">Poultry</a>
-                    </li>
-
-                    <li class="dropdown-item">
-                        <a href="#">Fishery</a>
-                    </li>
-
-                    <li class="dropdown-item">
-                        <a href="#">Pet</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/AccessoriesCat.html" class="submenu-title">Kit</a>
                     </li>
                 </ul>
             </li>
 
             <li class="menu-category">
-                <a href="../../category/Service/service.html" class="menu-title">Service</a>
+                <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Medicine</p>
 
-                <ul class="dropdown-list">
-                    <li class="dropdown-item">
-                        <a href="#">Grooming</a>
+                    <div>
+                        <ion-icon
+                            name="add-outline"
+                            class="add-icon"
+                        ></ion-icon>
+                        <ion-icon
+                            name="remove-outline"
+                            class="remove-icon"
+                        ></ion-icon>
+                    </div>
+                </button>
+
+                <ul class="submenu-category-list" data-accordion>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/medicine.html" class="submenu-title">Cattle</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">Training</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/medicine.html" class="submenu-title">Poultry</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">Veterinary</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/medicine.html" class="submenu-title">Fishery</a>
                     </li>
 
-                    <li class="dropdown-item">
-                        <a href="#">Insurance</a>
+                    <li class="submenu-category">
+                        <a href="../../category/categoryshop/medicine.html" class="submenu-title">Pet</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu-category">
+                <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Service</p>
+
+                    <div>
+                        <ion-icon
+                            name="add-outline"
+                            class="add-icon"
+                        ></ion-icon>
+                        <ion-icon
+                            name="remove-outline"
+                            class="remove-icon"
+                        ></ion-icon>
+                    </div>
+                </button>
+
+                <ul class="submenu-category-list" data-accordion>
+                    <li class="submenu-category">
+                        <a href="../../category/Service/service.html" class="submenu-title">Grooming</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="../../category/Service/service.html" class="submenu-title">Training</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="../../category/Service/service.html" class="submenu-title">Veterinary</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="../../category/Service/service.html" class="submenu-title">Insurance</a>
                     </li>
                 </ul>
             </li>
@@ -386,284 +575,93 @@
             </li>
 
             <li class="menu-category">
-                <a href="../../category/Contact/contact.html" class="menu-title">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="mobile-bottom-navigation">
-    <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-    </button>
-
-    <button class="action-btn">
-        <ion-icon name="bag-handle-outline"></ion-icon>
-
-        <span class="count">0</span>
-    </button>
-
-    <button class="action-btn">
-        <ion-icon name="home-outline"></ion-icon>
-    </button>
-
-    <button class="action-btn">
-        <ion-icon name="heart-outline"></ion-icon>
-
-        <span class="count">0</span>
-    </button>
-
-    <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="grid-outline"></ion-icon>
-    </button>
-</div>
-
-<nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
-    <div class="menu-top">
-        <h2 class="menu-title">Menu</h2>
-
-        <button class="menu-close-btn" data-mobile-menu-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-        </button>
-    </div>
-
-    <ul class="mobile-menu-category-list">
-        <li class="menu-category">
-            <a href="#" class="menu-title">Home</a>
-        </li>
-
-        <li class="menu-category">
-            <button class="accordion-menu" data-accordion-btn>
-                <p class="menu-title">Food</p>
-
-                <div>
-                    <ion-icon
-                        name="add-outline"
-                        class="add-icon"
-                    ></ion-icon>
-                    <ion-icon
-                        name="remove-outline"
-                        class="remove-icon"
-                    ></ion-icon>
-                </div>
-            </button>
-
-            <ul class="submenu-category-list" data-accordion>
-                <li class="submenu-category">
-                    <a href="../categoryshop/categoryBird.html" class="submenu-title">OEM</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../categoryshop/category.html" class="submenu-title">ODM</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../categoryshop/categoryBird.html" class="submenu-title">Chews</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../categoryshop/categoryFish.html" class="submenu-title">POTO</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="menu-category">
-            <button class="accordion-menu" data-accordion-btn>
-                <p class="menu-title">Toy</p>
-
-                <div>
-                    <ion-icon
-                        name="add-outline"
-                        class="add-icon"
-                    ></ion-icon>
-                    <ion-icon
-                        name="remove-outline"
-                        class="remove-icon"
-                    ></ion-icon>
-                </div>
-            </button>
-
-            <ul class="submenu-category-list" data-accordion>
-                <li class="submenu-category">
-                    <a href="../categoryshop/AccessoriesCat.html" class="submenu-title">Sand</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../categoryshop/AccessoriesDog.html" class="submenu-title">Ball</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../categoryshop/AccessoriesCat.html" class="submenu-title">Doll</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../categoryshop/AccessoriesDog.html" class="submenu-title">Kit</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="menu-category">
-            <button class="accordion-menu" data-accordion-btn>
-                <p class="menu-title">Medicine</p>
-
-                <div>
-                    <ion-icon
-                        name="add-outline"
-                        class="add-icon"
-                    ></ion-icon>
-                    <ion-icon
-                        name="remove-outline"
-                        class="remove-icon"
-                    ></ion-icon>
-                </div>
-            </button>
-
-            <ul class="submenu-category-list" data-accordion>
-                <li class="submenu-category">
-                    <a href="#" class="submenu-title">Cattle</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="#" class="submenu-title">Poultry</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="#" class="submenu-title">Fishery</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="#" class="submenu-title">Pet</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="menu-category">
-            <button class="accordion-menu" data-accordion-btn>
-                <p class="menu-title">Service</p>
-
-                <div>
-                    <ion-icon
-                        name="add-outline"
-                        class="add-icon"
-                    ></ion-icon>
-                    <ion-icon
-                        name="remove-outline"
-                        class="remove-icon"
-                    ></ion-icon>
-                </div>
-            </button>
-
-            <ul class="submenu-category-list" data-accordion>
-                <li class="submenu-category">
-                    <a href="../Service/service.html" class="submenu-title">Grooming</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../Service/service.html" class="submenu-title">Training</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../Service/service.html" class="submenu-title">Veterinary</a>
-                </li>
-
-                <li class="submenu-category">
-                    <a href="../Service/service.html" class="submenu-title">Insurance</a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="menu-category">
-            <a href="../Blog/blog.html" class="menu-title">Blog</a>
-        </li>
-
-        <li class="menu-category">
-            <a href="../Contact/contact.html" class="menu-title">Hot Offers</a>
-        </li>
-    </ul>
-
-    <div class="menu-bottom">
-        <ul class="menu-category-list">
-            <li class="menu-category">
-                <button class="accordion-menu" data-accordion-btn>
-                    <p class="menu-title">Language</p>
-
-                    <ion-icon
-                        name="caret-back-outline"
-                        class="caret-back"
-                    ></ion-icon>
-                </button>
-
-                <ul class="submenu-category-list" data-accordion>
-                    <li class="submenu-category">
-                        <a href="#" class="submenu-title"
-                            >Vietnamese</a
-                        >
-                    </li>
-
-                    <li class="submenu-category">
-                        <a href="#" class="submenu-title"
-                            >English</a
-                        >
-                    </li>
-
-                    <li class="submenu-category">
-                        <a href="#" class="submenu-title"
-                            >Fren&ccedil;h</a
-                        >
-                    </li>
-                </ul>
-            </li>
-
-            <li class="menu-category">
-                <button class="accordion-menu" data-accordion-btn>
-                    <p class="menu-title">Currency</p>
-                    <ion-icon
-                        name="caret-back-outline"
-                        class="caret-back"
-                    ></ion-icon>
-                </button>
-
-                <ul class="submenu-category-list" data-accordion>
-                    <li class="submenu-category">
-                        <a href="#" class="submenu-title">VND</a>
-                    </li>
-
-                    <li class="submenu-category">
-                        <a href="#" class="submenu-title"
-                            >USD &dollar;</a
-                        >
-                    </li>
-                </ul>
+                <a href="../../category/Contact/contact.html" class="menu-title">Hot Offers</a>
             </li>
         </ul>
 
-        <ul class="menu-social-container">
-            <li>
-                <a href="#" class="social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-            </li>
+        <div class="menu-bottom">
+            <ul class="menu-category-list">
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Language</p>
 
-            <li>
-                <a href="#" class="social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-            </li>
+                        <ion-icon
+                            name="caret-back-outline"
+                            class="caret-back"
+                        ></ion-icon>
+                    </button>
 
-            <li>
-                <a href="#" class="social-link">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-            </li>
+                    <ul class="submenu-category-list" data-accordion>
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title"
+                                >Vietnamese</a
+                            >
+                        </li>
 
-            <li>
-                <a href="#" class="social-link">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title"
+                                >English</a
+                            >
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title"
+                                >Fren&ccedil;h</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-category">
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Currency</p>
+                        <ion-icon
+                            name="caret-back-outline"
+                            class="caret-back"
+                        ></ion-icon>
+                    </button>
+
+                    <ul class="submenu-category-list" data-accordion>
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">VND</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title"
+                                >USD &dollar;</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="menu-social-container">
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
     <div class="containermain">
@@ -1539,8 +1537,8 @@
             <ol class="breadcrumnav">
                 <li><a href="../../index.html" target="_blank">Home</a></li>
                 <li><a href="../../category/categoryshop/category.html">Food</a></li>
-                <li><a href="../../category/categoryshop/AccessoriesDog.html">DogFood</a></li>
-                <li>Short-haired Cat</li>
+                <li><a href="../../category/categoryshop/category.html">DogFood</a></li>
+                <li>Pedigree Dry Dog Food</li>
             </ol>
         </div>
         </div>
@@ -1610,8 +1608,14 @@
                 </div>   
                 <div class="contentmain">
                     <div class="nameproduct">
+<<<<<<< HEAD
                         <h1 class="title">Pedigree Dry Dog Food</h1>
                         <h2 class="brand">Brand: America</h2>
+=======
+                        <h1 class="title">Pedigree Dry Dog Food
+                        </h1>
+                        <h2 class="brand">Brand: Royal Canin</h2>
+>>>>>>> 443178a5e76abbc0604caa5176de7dd1e9cc88ed
                         <h3 class="productid">Product ID: #65748</h3>
                     </div>
 
@@ -1699,57 +1703,103 @@
             <div class="product-content">
                 <div class="product-related">
                     <div class="image-product">
-                        <img class="image1" src="../images/dogfood-1.jpg" alt="">
-                        <img class="image2" src="../images/dogfood-1.jpg" alt="">
+                        <img class="image1" src="../../assets/images/product-category/product-12.webp" alt="">
+                        <img class="image2" src="../../assets/images/product-category/product_12_0.png" alt="">
                     </div>
                     <div class="product-relatedDetails">
                         <div class="nameproduct-relatedDetails">
-                            <p>Royal Dry Dog Food</p>
+                            <a href="../../detailpage/assets/product-1.html">American Journey Limited</a>
+                           
                         </div>
                         <div class="priceproduct-relatedDetails">
-                            <span>300,000₫</span>
+                            <span>350,000₫</span>
                         </div>
                     </div>
                 </div>
                 <div class="product-related">
                     <div class="image-product">
-                        <img class="image1" src="../images/img1.jpg" alt="">
-                        <img class="image2" src="../images/img5.jpg" alt="">
+                        <img class="image1" src="../images/catfood-1.jpg" alt="">
+                        <img class="image2" src="../images/catfood-2.jpg" alt="">
                     </div>
                     <div class="product-relatedDetails">
                         <div class="nameproduct-relatedDetails">
-                            <p>Cát cho mèo </p>
+                            <a href="../../detailpage/assets/product-1.html">Me-O Food Tuna</a>
+                           
                         </div>
                         <div class="priceproduct-relatedDetails">
-                            <span>250,000₫</span>
+                            <span>230,000₫</span>
                         </div>
                     </div>
                 </div>
                 <div class="product-related">
                     <div class="image-product">
-                        <img class="image1" src="../images/image8.jpg" alt="">
-                        <img class="image2" src="../images/image7.jpg" alt="">
+                        <img class="image1" src="../../assets/images/Hat/5.jpg" alt="">
+                        <img class="image2" src="../../assets/images/Hat/3.jpg" alt="">
                     </div>
                     <div class="product-relatedDetails">
                         <div class="nameproduct-relatedDetails">
-                            <p>Đồ chơi bạo hành động vật</p>
+                            <a href="../../detailpage/assets/product-3.html">King hat for cat</a>
+                           
                         </div>
                         <div class="priceproduct-relatedDetails">
-                            <span>250,000₫</span>
+                            <span>230,000₫</span>
                         </div>
                     </div>
                 </div>
                 <div class="product-related">
                     <div class="image-product">
-                        <img class="image1" src="../images/img1.jpg" alt="">
-                        <img class="image2" src="../images/img5.jpg" alt="">
+                        <img class="image1" src="../../assets/images/Food/catfood-5.jpg" alt="">
+                        <img class="image2" src="../../assets/images/Food/catfood-6.jpg" alt="">
                     </div>
                     <div class="product-relatedDetails">
                         <div class="nameproduct-relatedDetails">
-                            <p>Pate</p>
+                            <a href="../../detailpage/assets/product-5.html">Kusinta Fish Soup </a>
                         </div>
                         <div class="priceproduct-relatedDetails">
-                            <span>250,000₫</span>
+                            <span>320,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-related">
+                    <div class="image-product">
+                        <img class="image1" src="../images/46.jpg" alt="">
+                        <img class="image2" src="../images/44.jpg" alt="">
+                    </div>
+                    <div class="product-relatedDetails">
+                        <div class="nameproduct-relatedDetails">
+                            <a href="../../detailpage/assets/product-4.html">Catsrang Korean Food</a>
+                        </div>
+                        <div class="priceproduct-relatedDetails">
+                            <span>450,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-related">
+                    <div class="image-product">
+                        <img class="image1" src="../images/product-21.jpg" alt="">
+                        <img class="image2" src="../images/product-22.jpg" alt="">
+                    </div>
+                    <div class="product-relatedDetails">
+                        <div class="nameproduct-relatedDetails">
+                            <a href="../../detailpage/assets/product-2.html">Zoi-Cat Food </a>
+                           
+                        </div>
+                        <div class="priceproduct-relatedDetails">
+                            <span>230,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-related">
+                    <div class="image-product">
+                        <img class="image1" src="../../assets/images/Food/catfood-5.jpg" alt="">
+                        <img class="image2" src="../../assets/images/Food/catfood-6.jpg" alt="">
+                    </div>
+                    <div class="product-relatedDetails">
+                        <div class="nameproduct-relatedDetails">
+                            <a href="../../detailpage/assets/product-8.html">Kusinta Seafood Soup</a>
+                        </div>
+                        <div class="priceproduct-relatedDetails">
+                            <span>600,000₫</span>
                         </div>
                     </div>
                 </div>
