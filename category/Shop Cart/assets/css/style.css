@@ -145,7 +145,7 @@ table.shop_table td.product-subtotal span {
     font-size: 22px;
 }
 
-.product-price  {
+.product-price {
     padding-right: 10%;
 }
 
@@ -220,7 +220,7 @@ table.shop_table td.product-price {
 .cart_totals {
     text-transform: uppercase;
     padding: 54px;
-    background-color: var(--salmon-pink);
+    background-color: var(--spanish-gray);
     color: white;
     border-radius: 35px;
     text-align: inherit;

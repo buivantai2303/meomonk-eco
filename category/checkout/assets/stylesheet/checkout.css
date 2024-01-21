@@ -98,7 +98,7 @@ span {
 }
 
 html {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
     -ms-scroll-chaining: none;
     overscroll-behavior: contain;
 }
@@ -132,7 +132,6 @@ input::placeholder {
 
 body {
     background: var(--white);
-   
 }
 
 /**
@@ -164,7 +163,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    
 }
 
 .main-content {
@@ -186,7 +184,7 @@ body {
 .sideLeft {
     flex: 1.5;
     padding: 60px;
-    background-color: #f9ebea;
+    background-color: var(--white);
     border-radius: 20px;
 }
 .sideleft-Header {
@@ -291,12 +289,12 @@ input[type="radio"] {
 
 .price-product {
     width: 30%;
-
 }
 
 .imge-text span {
-    font-size: 16px; 
-  }
+    font-size: 16px;
+    font-weight: var(--weight-600);
+}
 
 .order-summary {
 }
@@ -317,22 +315,30 @@ input[type="radio"] {
 }
 
 .discounts-input {
-    display: flex;
+    position: relative;
+    /* display: flex; */
     justify-content: center;
+    align-items: center;
+
     border-bottom: 1px solid #333;
     margin-top: 20px;
 }
 
+#discount {
+    width: 100%;
+    /* position: absolute; */
+    left: 0;
+}
 .applyDiscountButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Đặt văn bản ở giữa dọc */
+    position: absolute;
+    left: 0;
+    top: 70px;
     margin-left: 10px; /* Khoảng cách giữa ảnh và văn bản */
-    background-color: #ff8f9c;
-    height: 39px;
-    padding: 10px;
+    background-color: var(--eerie-black);
+    padding: 20px;
     color: white;
-    margin-top: 1px;
+    border-radius: 999px;
+    font-weight: var(--weight-600);
 }
 
 .discount-code input,
@@ -358,6 +364,7 @@ input[type="radio"] {
     background-color: #d4d0ca;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    overflow-y: auto;
 }
 
 label {
@@ -369,35 +376,58 @@ input,
 select,
 textarea {
     width: 100%;
-    padding: 0.5em;
+    padding: 20px;
     margin-bottom: 1em;
     box-sizing: border-box;
+    border-radius: 20px;
+    font-weight: var(--weight-500);
+}
+
+h1,
+a,
+label {
+    font-weight: var(--weight-700);
+    color: var(--eerie-black);
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+    font-weight: var(--weight-500);
 }
 
 .button {
-    background-color: #333;
-    color: #fff;
-    padding: 0.5em 1em;
+    background-color: var(--salmon-pink);
+    color: var(--white);
+    font-weight: var(--weight-600);
+    padding: 20px;
     border: none;
     cursor: pointer;
+    border-radius: 999px;
+}
+
+.button:hover {
+    background: var(--eerie-black);
+    transition: 0.3s ease-in-out;
+}
+
+.applyDiscountButton:hover {
+    background: var(--salmon-pink);
+    transition: 0.3s ease-in-out;
 }
 
 /* Responsive styles */
 
-
 @media screen and (max-width: 900px) {
-     .gird-row{
+    .gird-row {
         flex-direction: column;
-     }
-
+    }
 }
 
 @media screen and (max-width: 440px) {
     .breadcrumb-link a {
-
         font-size: 10px;
     }
-    
 }
 
 /* -----------------------------------*\
@@ -510,6 +540,7 @@ input {
     display: block;
     width: 100%;
     font: inherit;
+    font-weight: var(--weight-500);
 }
 
 input::-webkit-input-placeholder {
