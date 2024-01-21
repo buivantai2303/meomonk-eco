@@ -12,6 +12,7 @@ function ready() {
         var button = buttonDelete[i];
         button.addEventListener("click", deleteItemcart);
     }
+    
     var buttonPlusQuantity = document.getElementsByClassName("plus-cart");
     for (var i = 0; i < buttonPlusQuantity.length; i++) {
         var button = buttonPlusQuantity[i];
@@ -30,10 +31,22 @@ function ready() {
         button.addEventListener("click", addToCart);
     }
 
+    // var buttonLike = document.getElementsByClassName("buttonLike");
+    // for (var i = 0; i < buttonLike.length; i++) {
+    //     var button = buttonLike[i];
+    //     button.addEventListener("click", likeShopcar);
+    // }
+
+
     document
         .getElementsByClassName("btn-pay")[0]
         .addEventListener("click", payClicked);
 }
+
+// function likeShopcar(event) {
+//     console.log(a)
+// }
+
 
 function deleteItemcart(event) {
     var buttonClicked = event.target;
@@ -45,6 +58,7 @@ function deleteItemcart(event) {
     //hide cart
     hideCart();
 }
+
 
 function updateItemCart() {
     var cartContainer = document.querySelector(".cart");
