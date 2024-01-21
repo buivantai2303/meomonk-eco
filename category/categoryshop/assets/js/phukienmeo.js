@@ -81,16 +81,26 @@ function hienThiProducts(thuonghieuchon_arr = [] , giaban_arr = []) {
         if (thuonghieuchon_arr.length > 0 && !thuonghieuchon_arr.includes(productBrand)) {
             continue;
         }
-
-        if(giaban_arr.length > 0){ 
-     
-            if(giaMoi < 100000 && giaban_arr.includes('1') == false) continue
-            if(giaMoi < 300000 && giaMoi > 100000 && giaban_arr.includes('2') == false) continue
-            if(giaMoi < 500000 && giaMoi > 300000 && giaban_arr.includes('3') == false) continue
+        if (giaban_arr.length > 0) {
+            var passFilter = false;
+        
+            if (giaban_arr.includes('1') && giaMoi < 100000) {
+                passFilter = true;
+            } else if (giaban_arr.includes('2') && giaMoi >= 100000 && giaMoi < 300000) {
+                passFilter = true;
+            } else if (giaban_arr.includes('3') && giaMoi >= 300000 && giaMoi < 500000) {
+                passFilter = true;
+           } else if (giaban_arr.includes('4') &&  giaMoi > 500000) {
+                passFilter = true;
+            }
+        
+            if (!passFilter) {
+                continue;
+            }
         }
       
 
-        console.log(ten , giaMoi)
+
         list.innerHTML += `
             <div class="grid__column_2-4">     
                 <a class="product-item" data-price="25" href="${link}">                            
@@ -114,9 +124,9 @@ function hienThiProducts(thuonghieuchon_arr = [] , giaban_arr = []) {
                 <div class="product-item-active__info">${sold} was sold</div>
             </div> 
             </div>`;
+
     }
 }
-
 
 function toggleStar(star) {
   

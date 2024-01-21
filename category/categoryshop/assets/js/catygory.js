@@ -15,12 +15,13 @@ var arrDog =[
     priceNew:350000,
     priceOld:500000,
     image:'../../assets/images/product-category/product-12.webp',
-    brand :'Minino ',
+    brand :'Minino',
     category : '',
     link :'../../detailpage/assets/product-12.html',
     sold :88,
     soLuong:1
 },
+
     { 
         nameProduce:'Smartheart premium granular food',
         priceNew:30000,
@@ -113,6 +114,8 @@ var arrDog =[
         link :'',
         sold :88
     }
+    
+
 ]    
 
 function formatCurrency(number) {
@@ -136,12 +139,24 @@ function hienThiProducts(thuonghieuchon_arr = [] , giaban_arr = []) {
             continue;
         }
 
-        if(giaban_arr.length > 0){ 
-     
-            if(giaMoi < 100000 && giaban_arr.includes('1') == false) continue
-            if(giaMoi < 300000 && giaMoi > 100000 && giaban_arr.includes('2') == false) continue
-            if(giaMoi < 500000 && giaMoi > 300000 && giaban_arr.includes('3') == false) continue
+        if (giaban_arr.length > 0) {
+            var passFilter = false;
+        
+            if (giaban_arr.includes('1') && giaMoi < 100000) {
+                passFilter = true;
+            } else if (giaban_arr.includes('2') && giaMoi >= 100000 && giaMoi < 300000) {
+                passFilter = true;
+            } else if (giaban_arr.includes('3') && giaMoi >= 300000 && giaMoi < 500000) {
+                passFilter = true;
+           } else if (giaban_arr.includes('4') &&  giaMoi > 500000) {
+                passFilter = true;
+            }
+        
+            if (!passFilter) {
+                continue;
+            }
         }
+      
       
 
         console.log(ten , giaMoi)
