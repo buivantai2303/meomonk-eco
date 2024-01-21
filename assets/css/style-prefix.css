@@ -1676,7 +1676,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0 8px;
     -webkit-border-radius: var(--border-radius-sm);
     border-radius: var(--border-radius-sm);
-    z-index: 3;
+    /* z-index: 3; */
 }
 
 .product-grid .showcase-badge.angle {
