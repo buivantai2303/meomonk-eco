@@ -521,6 +521,7 @@ input[type="checkbox"] {
 #lbexpand {
     border-radius: 5px;
     text-align: justify;
+    color:orange;
 }
 #lbexpand:hover {
     color: #e9c5c5;
