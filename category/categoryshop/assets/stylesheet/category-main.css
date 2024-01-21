@@ -85,6 +85,7 @@ input:focus {
     border-radius: 5px;
 
 }
+
 .ThuongHieu {
     display: inline;
     /* width: 100%; */
@@ -100,7 +101,7 @@ input:focus {
     background: url('../images/search-button.png') center no-repeat;
     background-size: contain;
     cursor: pointer;
-    background-size: 30px; 
+    background-size: 33px; 
 }
 
 .brand{
