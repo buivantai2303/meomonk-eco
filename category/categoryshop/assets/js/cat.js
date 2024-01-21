@@ -1,6 +1,78 @@
 var arrAnimal =[
 
     { 
+        nameProduce:'Catsrang Korean Food',
+        priceNew:500000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-2.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-4.html',
+        sold :88,
+        soLuong:1
+    },  
+    { 
+        nameProduce:'Me-O Food Tuna',
+        priceNew:100000,
+        priceOld:700000,
+        image:'../../assets/images/Food/catfood-1.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-1.html',
+        sold :32,
+        soLuong:1
+    },
+
+    { 
+        nameProduce:'Zoi Cat Food',
+        priceNew:230000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-3.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-2.html',
+        sold :88,
+        soLuong:1
+    },
+
+    { 
+        nameProduce:'Kusinta Seafood Soup',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-6.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-8.html',
+        sold :88,
+        soLuong:1
+    },
+
+    { 
+        nameProduce:'Kusinta Fish Soup',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-5.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-5.html',
+        sold :88,
+        soLuong:1
+    },
+
+    { 
+        nameProduce:'Kusinta Chicken Soup',
+        priceNew:600000,
+        priceOld:780000,
+        image:'../../assets/images/Food/catfood-8.jpg',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-5.html',
+        sold :88,
+        soLuong:1
+    },
+
+    
+    { 
         nameProduce:'Nutrience Original Healthy cat food',
         priceNew:130000,
         priceOld:260000,
@@ -110,6 +182,10 @@ var arrAnimal =[
         link :'',
         sold :72
     }
+
+
+
+
    
 ] 
 

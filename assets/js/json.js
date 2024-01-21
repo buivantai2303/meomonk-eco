@@ -60,7 +60,7 @@ var arrPhuKienChoMeo =[
         nameProduce:'Kusinta Seafood Soup',
         priceNew:600000,
         priceOld:780000,
-        image:'../../assets/images/Food/catfood-5.jpg',
+        image:'../../assets/images/Food/catfood-6.jpg',
         brand :'Minino ',
         category : '',
         link :'../../detailpage/assets/product-8.html',
@@ -86,7 +86,7 @@ var arrPhuKienChoMeo =[
         image:'../../assets/images/Food/catfood-5.jpg',
         brand :'Minino ',
         category : '',
-        link :'../../detailpage/assets/product-6.html',
+        link :'../../detailpage/assets/product-5.html',
         sold :88,
         soLuong:1
     },
@@ -95,10 +95,10 @@ var arrPhuKienChoMeo =[
         nameProduce:'Kusinta Chicken Soup',
         priceNew:600000,
         priceOld:780000,
-        image:'../../assets/images/Food/catfood-5.jpg',
+        image:'../../assets/images/Food/catfood-8.jpg',
         brand :'Minino ',
         category : '',
-        link :'../../detailpage/assets/product-6.html',
+        link :'../../detailpage/assets/product-5.html',
         sold :88,
         soLuong:1
     },
@@ -123,7 +123,19 @@ var arrPhuKienChoMeo =[
         link :'../../detailpage/assets/product-9.html',
         sold :88,
         soLuong:1
+    },
+    { 
+        nameProduce:'Pedigree Dry Dog Food',
+        priceNew:799000,
+        priceOld:900000,
+        image:'../../assets/images/product-category/product_11_0.png',
+        brand :'Minino ',
+        category : '',
+        link :'../../detailpage/assets/product-9.html',
+        sold :88,
+        soLuong:1
     }
+
 ] 
 localStorage.setItem("name","viet")
 
